@@ -1,0 +1,242 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "Phys_shapes"
+						children = 
+						[
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "pelvis"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 5.00128
+								point0 = [ -3.54358, 0.739461, 2.2482 ]
+								point1 = [ -3.54358, 0.739461, -2.2337 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "leg_upper_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 4.25
+								point0 = [ 6.5508, -0.185794, 0.006404 ]
+								point1 = [ 14.3229, -0.313743, 0.40524 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "leg_lower_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.05889
+								point0 = [ 2.13647, 0.15732, 0.700354 ]
+								point1 = [ 9.82055, 0.75219, 0.18592 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "ankle_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.03305
+								point0 = [ 0.457434, -2.14021, -0.041009 ]
+								point1 = [ 7.17328, 1.47792, 0.327235 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "leg_upper_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 4.25
+								point0 = [ -6.5508, 0.185794, -0.006404 ]
+								point1 = [ -14.3229, 0.313743, -0.40524 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "leg_lower_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.05889
+								point0 = [ -2.13647, -0.15732, -0.700354 ]
+								point1 = [ -9.82055, -0.75219, -0.18592 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "ankle_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.03305
+								point0 = [ -0.534348, 2.09878, 0.036791 ]
+								point1 = [ -7.18067, -1.4819, -0.32764 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "spine_0"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 6.24264
+								point0 = [ 3.23544, 0.799408, 0.00992 ]
+								point1 = [ 5.34393, 0.591955, -0.002278 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "spine_2"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 7.56728
+								point0 = [ 2.94678, 0.306194, -0.0 ]
+								point1 = [ 5.27992, 0.122411, -0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "clavicle_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.85146
+								point0 = [ 5.75911, 0.38421, -0.033306 ]
+								point1 = [ 6.53323, 0.617573, 0.24915 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "arm_upper_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.491607
+								point0 = [ 7.395461, 0.190664, -0.626661 ]
+								point1 = [ 3.710497, 0.190664, -0.626661 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "arm_lower_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.11343
+								point0 = [ 1.10007, 0.347076, -0.912665 ]
+								point1 = [ 9.32026, -0.019786, -0.378426 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "hand_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 1.65706
+								point0 = [ 1.84389, 0.115892, 0.026688 ]
+								point1 = [ 3.38144, 0.331427, 0.132435 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "clavicle_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.85146
+								point0 = [ -5.75911, -0.38421, 0.033306 ]
+								point1 = [ -6.860796, -0.71632, -0.36867 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "arm_upper_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.51133
+								point0 = [ -4.455047, -0.320611, 0.94791 ]
+								point1 = [ -9.39802, -0.29323, 1.101377 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "arm_lower_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.11343
+								point0 = [ -1.10007, -0.347076, 0.912665 ]
+								point1 = [ -9.32023, 0.019786, 0.378426 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "hand_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 1.65706
+								point0 = [ -1.84389, -0.115892, -0.026687 ]
+								point1 = [ -3.38144, -0.331427, -0.132435 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "neck_0"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.68367
+								point0 = [ 1.72847, 0.073119, -0.0 ]
+								point1 = [ 2.29917, 0.226707, 0.000036 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "head"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 4.3
+								point0 = [ 0.180955, 3.49588, -0.0 ]
+								point1 = [ 2.05242, -0.034592, -0.072219 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "leg_lower_l"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 1.83365
+								point0 = [ 12.415984, 1.302799, -0.064528 ]
+								point1 = [ 15.891527, 0.468736, 0.067925 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "leg_lower_r"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 1.83365
+								point0 = [ -12.8329, -0.415374, -0.229383 ]
+								point1 = [ -15.6394, -0.210487, 0.0044 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "spine_2"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.26557
+								point0 = [ 9.57729, -5.41213, 0.001911 ]
+								point1 = [ 3.89126, -6.71743, 0.000703 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "spine_2"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 2.22937
+								point0 = [ 5.06904, -8.68922, -5.99752 ]
+								point1 = [ 3.95606, -8.8825, -5.88306 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "spine_2"
+								surface_prop = "npc_combine_soldier"
+								collision_prop = "default"
+								radius = 3.29699
+								point0 = [ 6.43605, -5.95586, 5.20292 ]
+								point1 = [ 4.65615, -6.30354, 5.20255 ]
+							},
+						]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

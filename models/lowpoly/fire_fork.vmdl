@@ -1,0 +1,114 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models\\lowpoly\\dmx\\mesh\\fire_fork.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "prop_data"
+						game_keys = 
+						{
+							base = ""
+							allowstatic = false
+							bakelighting = true
+							damage_table = ""
+							"dmg.bullets" = -1.0
+							"dmg.club" = -1.0
+							"dmg.explosive" = -1.0
+							"dmg.fire" = -1.0
+							health = -1.0
+							spawn_motion_disabled = false
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "cylinder_idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = ""
+							origin_left = [ -1.05611, 0.918087, 0.076043 ]
+							angles_left = [ 66.207298, 23.268492, 6.912496 ]
+							origin_right = [ -1.05611, -0.918087, 0.076043 ]
+							angles_right = [ 66.2073, -23.2685, -6.9125 ]
+							max_distance = 5.0
+							finger_thumb = 0.723
+							finger_pinky = 0.893
+							finger_ring = 0.754
+							finger_middle = 0.748
+							finger_index = 0.754
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, -0.0, -2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = true
+							rotation_axis0 = [ 35.0, -8.0, 1.8 ]
+							rotation_axis1 = [ -5.0, 1.0, -0.1 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsHullFile"
+						name = "fire_fork"
+						parent_bone = ""
+						surface_prop = "prop.metal_tool"
+						collision_prop = "default"
+						recenter_on_parent_bone = false
+						offset_origin = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 0.0, 0.0 ]
+						filename = "models/lowpoly/dmx/mesh/fire_fork.dmx"
+						import_scale = 1.0
+						faceMergeAngle = 10.0
+						maxHullVertices = 27
+						import_mode = "HullPerMesh"
+						optimization_algorithm = "QEM"
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = "physics_prop_model"
+		primary_associated_entity = "prop_physics"
+		anim_graph_name = ""
+	}
+}

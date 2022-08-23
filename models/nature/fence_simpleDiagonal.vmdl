@@ -1,0 +1,88 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "ModelModifierList"
+				children = 
+				[
+					{
+						_class = "Prefab"
+						target_file = "models/nature/prefabs/ground_scale.vmdl_prefab"
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "wood.vmat"
+								to = "models/nature/materials/wood.vmat"
+							},
+							{
+								from = "woodDark.vmat"
+								to = "models/nature/materials/woodDark.vmat"
+							},
+
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsMeshFile"
+						name = "fence_simpleDiagonal"
+                        disabled = false
+						parent_bone = ""
+						surface_prop = "prop.wood_plank"
+						collision_prop = "default"
+						recenter_on_parent_bone = false
+						offset_origin = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 0.0, 0.0 ]
+						filename = "models/nature/meshes/fence_simpleDiagonal.fbx"
+						import_scale = 1.0
+						maxMeshVertices = 0
+						qemError = 0.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/nature/meshes/fence_simpleDiagonal.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = "static_prop_model"
+		primary_associated_entity = "prop_static"
+		anim_graph_name = ""
+	}
+}

@@ -1,0 +1,122 @@
+"bivouac_main"
+{
+	// Exterior
+
+	"playevent"
+	{
+		"event"	"BivouacSoundscape.FliesBuzzing"
+		"volume"	"0.4"
+		//remap_global_opvar_01_to_vol_min = 1.0
+		//remap_global_opvar_01_to_vol_max = 0.0
+		"traveler"	"FliesBuzzing01"
+	}
+	
+	//"playevent"
+	//{
+	//	"event"	"AmbProcPlant.FliesBuzzing"
+	//	"volume"	"0.5"
+	//	"random_soundevent_01_timer_min"	"35"
+	//	"random_soundevent_01_timer_max"	"50"
+	//	"traveler"	"FliesBuzzing02"
+	//}
+
+	"playevent"
+	{
+		
+		"event"	"Ambient.WindSystem"
+		"traveler" "WindSystem"
+	}
+
+    "playevent"
+	{
+		"event"	"BivouacSoundscape.ExteriorLp"
+		"traveler" "ExteriorLp"
+	}
+
+    // Interior
+
+    //"playevent"
+	//{
+	//	"event"	"AmbientHotelStreet.InteriorSmLp"
+	//	"volume"	"0.8"
+	//	"traveler" "InteriorSmLp"
+	//}
+
+    "playevent"
+	{
+		"event"	"BivouacSoundscape.InteriorSmallRoomLp"
+		"volume"	"0.4"
+		"traveler" "InteriorSmallRoomLp"
+	}
+
+    // Cavern
+
+    "playevent"
+	{
+		"event"	"BivouacSoundscape.RandomConcreteFall"
+		"traveler" "RandomConcreteFall"
+		"position"	"random"
+	}
+
+    "playevent"
+	{
+		"event"	"BivouacSoundscape.RandomPebbleFall"
+		"traveler" "RandomPebbleFall"
+		"volume"	"0.5"
+		"position"	"random"
+	}
+
+    "playevent"
+	{
+		"event"	"BivouacSoundscape.SkullBreath"
+		"traveler" "SkullBreath"
+		"position"	"random"
+		"volume"	"0.2"
+	}
+
+    //"playevent"
+	//{
+	//	"event" "BivouacSoundscape.WaterdripSingle"
+	//	"volume"	"0.6"	
+	//	"traveler" "WaterdripSingle"
+	//}
+
+	"playevent"
+	{
+		"event"	"BivouacSoundscape.CaveLp"
+		"volume"	"1.0"
+		"traveler" "CaveLp"
+	}
+
+    // Portal room
+
+    "playevent"
+	{
+		"event"	"BivouacSoundscape.DarknessAddinLp"
+		"volume"	"1.0"
+        // What is the traveller? Is it defined elsewhere?
+		"traveler" "DarknessAddinLp"
+	}
+
+	// Ending (xen proximity)
+
+	"playevent"
+	{
+		"event"	"BivouacSoundscape.WoodKnockSingle"
+		//"volume"	"0.5"
+		//"random_soundevent_01_timer_min"	"1"
+		//"random_soundevent_01_timer_max"	"5"
+		"traveler"	"WoodKnockSingle2"
+	}
+
+	//"playevent"   
+	//{
+	//	"event"		"TrainBoxcar.BellPassby"
+		//"origin"	"-3800.00, 1550.687500, 27.767151"
+		//"position_target"	"-3800.00, -2000.718750, 25.923401"
+		//"random_soundevent_01_timer_min"	"13"
+		//"random_soundevent_01_timer_max"	"13"
+	//	"position"	"1"
+	//}
+	
+}

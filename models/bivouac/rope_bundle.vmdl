@@ -1,0 +1,231 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "prop_data"
+						game_keys = 
+						{
+							base = ""
+							allowstatic = false
+							bakelighting = true
+							damage_table = ""
+							"dmg.bullets" = -1.0
+							"dmg.club" = -1.0
+							"dmg.explosive" = -1.0
+							"dmg.fire" = -1.0
+							health = -1.0
+							spawn_motion_disabled = false
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "ao_proxy_capsule"
+						game_keys = 
+						{
+							bonename = ""
+							radius = 3.66538
+							point0 = [ 0.0, 6.28757, 0.0 ]
+							point1 = [ 0.0, -6.28391, 0.0 ]
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "vr_carry_type"
+						game_keys = 
+						{
+							carry_type = "0"
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "handpose_data"
+						game_keys = 
+						{
+							handpose_bone = ""
+							handpose_model = "models/props/max/handposes/handpose_grabpole.vmdl"
+							allow_procedural_handpose = false
+							global_pose_template = false
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = ""
+							origin_left = [ 3.55718, -0.896032, 1.18997 ]
+							angles_left = [ -52.7984, 172.234, 92.2674 ]
+							origin_right = [ 3.55718, 0.896032, 1.18997 ]
+							angles_right = [ -52.798405, -172.233994, -92.26741 ]
+							max_distance = 5.0
+							finger_thumb = 0.0
+							finger_pinky = 0.232
+							finger_ring = 0.276
+							finger_middle = 0.339
+							finger_index = 0.396
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, -0.0, 2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = true
+							rotation_axis0 = [ 0.0, 10.0, 0.0 ]
+							rotation_axis1 = [ 0.0, -10.0, 0.0 ]
+							rotation_min = 90.0
+							rotation_max = 90.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+					{
+						_class = "GenericGameData"
+						name = "_copy"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "grab"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = ""
+							origin_left = [ -0.028357, -9.98868, 0.995022 ]
+							angles_left = [ -52.7984, 89.0572, 92.2674 ]
+							origin_right = [ -0.028357, 9.98868, 0.995022 ]
+							angles_right = [ -52.798397, -89.057213, -92.267418 ]
+							max_distance = 3.0
+							finger_thumb = 0.138
+							finger_pinky = 0.61
+							finger_ring = 0.496
+							finger_middle = 0.345
+							finger_index = 0.364
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, -0.0, 2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "rope.vmat"
+								to = "models/lowpoly/materials/package_leather.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeCapsule"
+						disabled = true
+						parent_bone = ""
+						surface_prop = "prop.leather_shoe"
+						collision_prop = "default"
+						radius = 3.5
+						point0 = [ -0.00095, -6.401729, -0.062011 ]
+						point1 = [ -0.00095, 6.283969, -0.062011 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						disabled = true
+						parent_bone = ""
+						surface_prop = "prop.leather_shoe"
+						collision_prop = "default"
+						radius = 4.0
+						point0 = [ -0.00095, -2.360529, -0.062011 ]
+						point1 = [ -0.00095, 1.97264, -0.062011 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						disabled = true
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.030992, -0.122375, 0.120136 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 6.060083, 6.0, 4.216865 ]
+					},
+					{
+						_class = "PhysicsHullFile"
+						name = "rope_collision"
+						parent_bone = ""
+						surface_prop = "prop.leather_shoe"
+						collision_prop = "default"
+						recenter_on_parent_bone = false
+						offset_origin = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 0.0, 0.0 ]
+						filename = "models/bivouac/mesh/rope_collision.fbx"
+						import_scale = 0.98
+						faceMergeAngle = 10.0
+						maxHullVertices = 64
+						import_mode = "SingleHull"
+						optimization_algorithm = "IFR"
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/bivouac/mesh/rope 01.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = 
+							[
+								"Plane03",
+							]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = "physics_prop_model"
+		primary_associated_entity = "prop_physics"
+		anim_graph_name = ""
+	}
+}

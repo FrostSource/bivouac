@@ -1,0 +1,6 @@
+Layer0
+{
+	shader "vr_simple.vfx"
+	TextureColor "[0.9960784 0.6941177 0.2784314 0.000000]"
+    TextureRoughness "[0.9 0.9 0.9 0.000000]"
+}

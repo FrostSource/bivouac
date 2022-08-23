@@ -1,0 +1,287 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_nCounterMin = 1
+	m_nCounterMax = 1
+	m_flSpacing = 181.0
+	m_flRadius = 128.0
+	m_flEraseAmount = 1.0
+	m_bConstantDensity = true
+	m_bOnlyHitMeshes = true
+	m_bRadialFalloff = true
+	m_elements = 
+	[
+		{
+			m_assetName = "models/nature/tree_pinesmalld.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.91
+				m_flMaxScale = 1.18
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinesmallc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.77
+				m_flMaxScale = 1.19
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinesmallb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.83
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pineroundf.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.85
+				m_flMaxScale = 1.17
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinerounde.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.75
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pineroundd.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.84
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pineroundc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.8
+				m_flMaxScale = 1.24
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pineroundb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.81
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinerounda.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.75
+				m_flMaxScale = 1.18
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinegroundb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.75
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinegrounda.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.81
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinedefaultb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.81
+				m_flMaxScale = 1.24
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/tree_pinedefaulta.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.78
+				m_flMaxScale = 1.21
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+	]
+}

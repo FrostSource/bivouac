@@ -1,0 +1,494 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_ConstantNormal = [ 1.0, 1.0, 1.0 ]
+	m_flConstantRadius = 0.25
+	m_nMaxParticles = 42
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [ 0.0, 0.0, -255.0 ]
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_PinParticleToCP"
+			m_flBreakDistance = 
+			{
+				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
+				m_nMapType = "PF_MAP_TYPE_REMAP"
+				m_flLiteralValue = 1.35
+				m_nControlPoint = 2
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 2.5
+				m_flRandomMax = 3.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 12.0
+				m_flOutput1 = 0.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_nBreakControlPointNumber = 1
+		},
+		{
+			_class = "C_OP_PinParticleToCP"
+			m_nControlPointNumber = 1
+			m_nParticleSelection = "PARTICLE_SELECTION_LAST"
+			m_flBreakDistance = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 1.35
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+		},
+		{
+			_class = "C_OP_EndCapTimedDecay"
+		},
+		{
+			_class = "C_OP_SetFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_COLLECTION_AGE"
+				m_nMapType = "PF_MAP_TYPE_REMAP"
+				m_flLiteralValue = 0.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
+				m_flMultFactor = 1.0
+				m_flInput0 = 15.0
+				m_flInput1 = 20.0
+				m_flOutput0 = 1.0
+				m_flOutput1 = 0.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_nOutputField = "34"
+			m_Lerp = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_REMAP"
+				m_flLiteralValue = 0.01
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
+				m_flMultFactor = 1.0
+				m_flInput0 = 5.0
+				m_flInput1 = 10.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 0.01
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderRopes"
+			m_nMaxTesselation = 8
+			m_flTextureVWorldSize = 0.1
+			m_bDrawAsOpaque = true
+			m_bWriteStencilOnDepthPass = false
+			m_hTexture = resource:"materials/particle/beam_generic_2.vtex"
+			m_flSelfIllumAmount = 1.0
+			m_flDepthBias = 1.0
+			m_bDisableOperator = true
+			m_vecColorScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_LiteralColor = [ 255, 255, 255 ]
+			}
+		},
+		{
+			_class = "C_OP_RenderRopes"
+			m_nMaxTesselation = 8
+			m_flTextureVWorldSize = 100.0
+			m_nScalarFieldForTextureCoordinate = "18"
+			m_flScalarAttributeTextureCoordScale = 300.0
+			m_hTexture = resource:"materials/particle/intestine_beam.vtex"
+			m_vecColorScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_LiteralColor = [ 255, 255, 255 ]
+			}
+		},
+		{
+			_class = "C_OP_RenderRopes"
+			m_nMaxTesselation = 8
+			m_flTextureVWorldSize = 150.0
+			m_nScalarFieldForTextureCoordinate = "18"
+			m_flScalarAttributeTextureCoordScale = 300.0
+			m_flRadiusScale = 0.5
+			m_flAnimationRate = 0.5
+			m_flSelfIllumAmount = 0.05
+			m_flDiffuseAmount = 0.5
+			m_bGammaCorrectVertexColors = false
+			m_bSaturateColorPreAlphaBlend = false
+			m_bAdditive = true
+			m_bWriteStencilOnDepthPass = false
+			m_flOverbrightFactor = 8.0
+			m_hTexture = resource:"materials/particle/water/water_beam_01.vtex"
+			m_vecColorScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_LiteralColor = [ 255, 255, 255 ]
+			}
+			m_bDisableOperator = true
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateSequentialPathV2"
+			m_flNumToAssign = 7.0
+			m_PathParams = 
+			{
+				m_nEndControlPointNumber = 1
+			}
+		},
+		{
+			_class = "C_INIT_InitFloatCollection"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_BIASED"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 0.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.05
+				m_flRandomMax = 0.25
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = -0.559
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_InitFloatCollection"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_BIASED"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 0.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 1.0
+				m_flRandomMax = 2.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = -0.559
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 7.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_flStartTime = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 0.1
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+		},
+	]
+	m_Constraints = 
+	[
+		{
+			_class = "C_OP_RopeSpringConstraint"
+			m_flMaxDistance = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 1.01
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 1.0
+				m_flRandomMax = 1.25
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_flMinDistance = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 0.99
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.4
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_flRestLength = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 1.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.1
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+			m_flAdjustmentScale = 10.0
+		},
+		{
+			_class = "C_OP_WorldTraceConstraint"
+			m_flBounceAmount = 0.00025
+			m_flSlideAmount = 0.1
+			m_flRadiusScale = 1.25
+			m_bDisableOperator = true
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 0.0, 0.0, 0.0 ]
+					m_angOffset = [ 0.0, 0.0, 0.0 ]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_nBehaviorVersion = 10
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_CurlNoiseForce"
+			m_vecNoiseFreq = [ 0.022, 0.023, 0.021 ]
+			m_vecNoiseScale = [ 12.0, 12.0, 5.0 ]
+			m_vecOffsetRate = [ 1.253, 2.1234, 3.2122 ]
+		},
+		{
+			_class = "C_OP_ExternalGameImpulseForce"
+			m_flForceScale = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 100.0
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flMultFactor = 1.0
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 0.0
+				m_flOutput1 = 1.0
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.0
+				m_Curve = 
+				{
+					m_spline = [  ]
+					m_tangents = [  ]
+					m_vDomainMins = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 0.0, 0.0 ]
+				}
+			}
+		},
+	]
+	m_flMaximumTimeStep = 0.025
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/bivouac/xenslimeropedripplug.vpcf"
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_RampCPLinearRandom"
+			m_nOutControlPointNumber = 2
+			m_vecRateMin = [ 0.22, 0.0, 0.0 ]
+			m_vecRateMax = [ 0.22, 0.0, 0.0 ]
+		},
+	]
+}

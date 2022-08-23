@@ -1,0 +1,1253 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_nCounterMin = 1
+	m_nCounterMax = 2
+	m_flSpacing = 198.0
+	m_flRadius = 128.0
+	m_flEraseAmount = 1.0
+	m_bConstantDensity = true
+	m_bOnlyHitMeshes = true
+	m_bRadialFalloff = true
+	m_elements = 
+	[
+		{
+			m_assetName = "models/nature/stump_squaredetailedwide.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.26
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stump_squaredetailed.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.17
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stump_square.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.2
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stump_rounddetailed.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.25
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stump_round.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.25
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stump_oldtall.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.25
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stump_old.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.25
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_bush.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.31
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_bushdetailed.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.23
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_bushlarge.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.35
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_bushlargetriangle.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.35
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_bushsmall.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.56
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_bushtriangle.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.69
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_flatshort.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.54
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/plant_flattall.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.37
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 5.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/mushroom_red.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.33
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.08
+				m_flMaxScale = 0.08
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.75
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/mushroom_redgroup.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.33
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.1
+				m_flMaxScale = 0.1
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 2.01
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/mushroom_redtall.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.29
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.14
+				m_flMaxScale = 0.09
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.99
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/mushroom_tan.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.27
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.1
+				m_flMaxScale = 0.13
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.97
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/mushroom_tangroup.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.5
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.1
+				m_flMaxScale = 0.3
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.62
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/mushroom_tantall.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.22
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.14
+				m_flMaxScale = 0.15
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 2.09
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/grass.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 2.02
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 0.8
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/grass_large.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 2.02
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 0.77
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/grass_leafs.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 1.96
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 0.83
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/grass_leafslarge.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 1.0
+				m_flMaxDensity = 2.02
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 0.8
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_yellowc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.4
+				m_flMaxDensity = 1.0
+				m_flMinScale = 0.24
+				m_flMaxScale = 0.43
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_yellowb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.27
+				m_flMaxDensity = 0.75
+				m_flMinScale = 0.21
+				m_flMaxScale = 0.43
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.66
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_yellowa.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.27
+				m_flMaxDensity = 0.89
+				m_flMinScale = 0.21
+				m_flMaxScale = 0.43
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.89
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_redc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.44
+				m_flMaxDensity = 0.69
+				m_flMinScale = 0.17
+				m_flMaxScale = 0.4
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.54
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_redb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.44
+				m_flMaxDensity = 0.75
+				m_flMinScale = 0.2
+				m_flMaxScale = 0.43
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.66
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_reda.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.44
+				m_flMaxDensity = 0.56
+				m_flMinScale = 0.25
+				m_flMaxScale = 0.4
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 2.26
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_purplec.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.27
+				m_flMaxDensity = 0.54
+				m_flMinScale = 0.18
+				m_flMaxScale = 0.43
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 2.13
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_purplea.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.27
+				m_flMaxDensity = 0.54
+				m_flMinScale = 0.21
+				m_flMaxScale = 0.43
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.66
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/flower_purpleb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.41
+				m_flMaxDensity = 0.82
+				m_flMinScale = 0.19
+				m_flMaxScale = 0.41
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.6
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_largea.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_largeb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smalla.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smalld.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smalle.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallf.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallflata.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.27
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallflatb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.27
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallflatc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.27
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_smallg.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_talla.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.25
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_tallb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.18
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_tallh.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/rock_tallg.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.25
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smallc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.32
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smallb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.32
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smalla.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.32
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smalld.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.32
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smalle.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.32
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smallf.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.31
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smallflata.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.35
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smallflatb.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.35
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+		{
+			m_assetName = "models/nature/stone_smallflatc.vmdl"
+			m_vBoundsMin = [ 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0, 340282346638528859811704183484516925440.0 ]
+			m_vBoundsMax = [ -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0, -340282346638528859811704183484516925440.0 ]
+			m_settings = 
+			{
+				m_flMinDensity = 0.0
+				m_flMaxDensity = 0.35
+				m_flMinScale = 0.5
+				m_flMaxScale = 1.0
+				m_vMinAngle = [ 0.0, 0.0, 0.0 ]
+				m_vMaxAngle = [ 0.0, 360.0, 0.0 ]
+				m_vMinColor = [ 1.0, 1.0, 1.0 ]
+				m_vMaxColor = [ 1.0, 1.0, 1.0 ]
+				m_flSpacingMul = 1.0
+				m_flSlopeThreshold = 100000.0
+				m_vMasterDirection = [ 0.0, 0.0, 1.0 ]
+				m_flMasterDirectionInfluence = 0.0
+				m_bEnabled = true
+			}
+		},
+	]
+}

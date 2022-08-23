@@ -1,0 +1,100 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models\\lowpoly\\dmx\\mesh\\vitara.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsMeshFile"
+						name = "vitara"
+						disabled = true
+						parent_bone = ""
+						surface_prop = "prop.metal"
+						collision_prop = "default"
+						recenter_on_parent_bone = false
+						offset_origin = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 0.0, 0.0 ]
+						filename = "models/lowpoly/dmx/mesh/vitara.dmx"
+						import_scale = 1.0
+						maxMeshVertices = 41
+						qemError = 0.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.155213, 15.262988, 17.249454 ]
+						angles = [ 0.0, 0.0, -21.838575 ]
+						dimensions = [ 58.359024, 30.522446, 1.323509 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.049499, 10.423808, -29.744263 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 62.364311, 40.200817, 84.885956 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.049499, -15.837519, -27.411648 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 62.364311, 30.830498, 103.834885 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.049499, -16.575369, 27.133995 ]
+						angles = [ -0.0, 0.0, 4.182514 ]
+						dimensions = [ 62.364311, 32.249443, 75.92495 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -0.039554, -18.515265, 63.407646 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 64.946815, 14.4296, 12.164146 ]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

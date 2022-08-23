@@ -1,0 +1,197 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "grab"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = ""
+							origin_left = [ -3.6764, 6.22949, 5.91326 ]
+							angles_left = [ -51.738495, 9.147891, 13.545901 ]
+							origin_right = [ -3.6764, -6.22949, 5.91326 ]
+							angles_right = [ -51.7385, -9.14789, -13.5459 ]
+							max_distance = 32.0
+							finger_thumb = 0.3
+							finger_pinky = 0.385
+							finger_ring = 0.294
+							finger_middle = 0.392
+							finger_index = 0.483
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, 0.0, 2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, -0.0, 2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "vr_carry_type"
+						game_keys = 
+						{
+							carry_type = "0"
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "prop_data"
+						game_keys = 
+						{
+							base = "Cloth.Small"
+							allowstatic = false
+							bakelighting = true
+							damage_table = ""
+							"dmg.bullets" = -1.0
+							"dmg.club" = -1.0
+							"dmg.explosive" = -1.0
+							"dmg.fire" = -1.0
+							health = -1.0
+							spawn_motion_disabled = false
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "handpose_data"
+						game_keys = 
+						{
+							handpose_bone = ""
+							handpose_model = "models/props/max/handposes/handpose_grabpole.vmdl"
+							allow_procedural_handpose = false
+							global_pose_template = false
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "ao_proxy_box"
+						game_keys = 
+						{
+							bonename = ""
+							dimensions = [ 9.00231, 16.346, 19.9711 ]
+							offset_origin = [ 0.498847, 0.155292, 0.4311 ]
+							offset_angles = [ 0.0, 0.0, 0.0 ]
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "brown.vmat"
+								to = "models/bivouac/materials/backpack_brown.vmat"
+							},
+							{
+								from = "gold.vmat"
+								to = "models/bivouac/materials/backpack_gold.vmat"
+							},
+							{
+								from = "green.vmat"
+								to = "models/bivouac/materials/backpack_green.vmat"
+							},
+							{
+								from = "lightgreen.vmat"
+								to = "models/bivouac/materials/backpack_lightgreen.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsHullFile"
+						parent_bone = ""
+						surface_prop = "world.carpet"
+						collision_prop = "default"
+						recenter_on_parent_bone = false
+						offset_origin = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 0.0, 0.0 ]
+						filename = "models/bivouac/mesh/Backpack.fbx"
+						import_scale = 0.0657
+						faceMergeAngle = 15.0
+						maxHullVertices = 0
+						import_mode = "SingleHull"
+						optimization_algorithm = "QEM"
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/bivouac/mesh/Backpack.fbx"
+						import_scale = 0.0657
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "left_hand_grab"
+						parent_bone = ""
+						relative_origin = [ -2.826719, 6.744298, 6.081141 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "right_hand_grab"
+						parent_bone = ""
+						relative_origin = [ -2.826719, -6.795497, 6.081141 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+		]
+		model_archetype = "physics_prop_model"
+		primary_associated_entity = "prop_physics"
+		anim_graph_name = ""
+	}
+}

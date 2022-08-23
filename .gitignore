@@ -1,0 +1,9 @@
+/_bakeresourcecache/
+*bakeresourcecache.vpk
+__test*
+
+# Copyright files
+models/low_poly_rocks_pack/
+materials/blood_decals/
+models/creepymonster/
+sounds/copyright

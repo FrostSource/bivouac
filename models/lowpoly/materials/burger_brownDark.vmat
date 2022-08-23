@@ -1,0 +1,12 @@
+Layer0
+{
+	shader "vr_simple.vfx"
+	TextureColor "[0.6 0.22 0.11 0.000000 0.000000]"
+    TextureRoughness "[1 1 1 0.000000 0.000000]"
+
+    SystemAttributes
+	{
+		WorldMappingWidth "128"
+        WorldMappingHeight "128"
+	}
+}

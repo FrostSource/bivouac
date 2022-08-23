@@ -1,0 +1,39 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_ice_surface.vfx"
+
+	//---- Color ----
+	g_flTexCoordScale "1.000"
+	g_vTexCoordOffset "[0.000 0.000 0.000]"
+	TextureColor "materials/default/default_color.tga"
+
+	//---- Emissive ----
+	g_flEmissiveBrightness "0.000"
+	g_flEmissiveScale "1.000"
+	g_vEmissiveTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureFresnelEmission "materials/default/default.tga"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Interior ----
+	g_flDiffuseExponent "2.000"
+	g_flDiffuseWrap "1.000"
+	g_flInteriorRefractRoughness "0.500"
+	g_flInteriorRefractStrength "0.300"
+	g_vDiffuseTint "[0.200000 0.501961 1.000000 0.000000]"
+	g_vDiffuseWrapColor "[1.000000 1.000000 1.000000 0.000000]"
+	g_vInteriorMixParams "[0.250 1.000 2.000]"
+	g_vInteriorRefractTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	//---- Normal ----
+	TextureNormal "materials/default/default_normal.tga"
+
+	//---- Roughness ----
+	TextureRoughness "materials/default/default_rough.tga"
+
+	//---- Translucency ----
+	TextureTranslucency "[0.000000 0.000000 0.000000 0.000000]"
+}
