@@ -7,7 +7,7 @@ local fire_level = 1
 ---@type EntityHandle
 local fire_scalar = 2
 
-local fire_putout_multiplier = 0.1
+local fire_putout_multiplier = 0.3
 
 local last_steam_sound = 0
 local steam_sound_time = 0.4

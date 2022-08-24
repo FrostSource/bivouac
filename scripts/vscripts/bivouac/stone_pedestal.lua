@@ -23,14 +23,17 @@ end
 
 ---Checks if the target parented to this has a rock parented to it
 local function UpdateState()
-    -- for _, child in ipairs(thisEntity:GetChildren()) do
-    --     if #child:GetChildren() > 0 then
-    --         return
-    --     end
-    -- end
-    if thisEntity:LoadBoolean("HasStoneAttached", false) then
+    for _, child in ipairs(thisEntity:GetChildren()) do
+        if #child:GetChildren() > 0 then
+            return
+        end
+    end
+    if thisEntity:LoadBoolean("HasStoneAttached", false)
+    and thisEntity:LoadBoolean("HasCorrectStoneAndAngle", false)
+    then
         thisEntity:FireOutput("OnUser2", thisEntity, thisEntity, nil, 0)
         thisEntity:SaveBoolean("HasStoneAttached", false)
+        thisEntity:SaveBoolean("HasCorrectStoneAndAngle", false)
     end
 end
 thisEntity:GetPrivateScriptScope().UpdateState = UpdateState
@@ -43,7 +46,7 @@ local function Attach(io)
     local angle = (math.atan2(angle_vector.y,angle_vector.x)*180/math.pi) + 180
     local snapped = math.floor((angle / 60) + 0.5) * 60
     local adjusted = ANGLES[snapped]
-    print("attaching stone "..io.activator:GetName().." to pedestal at angle", angle, snapped, adjusted)
+    -- print("attaching stone "..io.activator:GetName().." to pedestal at angle", angle, snapped, adjusted)
     local target = Entities:FindByName(nil, thisEntity:GetName() .. "_target_" .. adjusted)
 
     io.activator:EmitSound("Bivouac.StonePlace")
@@ -51,7 +54,17 @@ local function Attach(io)
     local data = thisEntity:FindInPrefab("pedestal_data")
     if data and data:LoadString("correct_angle") == adjusted
     and data:LoadString("correct_stone") == io.activator:GetName() then
+        print("CORRECT STONE AND ANGLE")
         thisEntity:FireOutput("OnUser1", thisEntity, thisEntity, nil, 0)
+        thisEntity:SaveBoolean("HasCorrectStoneAndAngle", true)
+    else
+        thisEntity:SaveBoolean("HasCorrectStoneAndAngle", false)
+        print("INCORRECT STONE OR ANGLE")
+        -- print("\tdata", data)
+        -- if data then
+        --     print("\tcorrect_angle", data:LoadString("correct_angle"), adjusted)
+        --     print("\tcorrect_stone", data:LoadString("correct_stone"), io.activator:GetName())
+        -- end
     end
 
     -- local top = io.activator:GetAttachmentOrigin(io.activator:ScriptLookupAttachment("top"))

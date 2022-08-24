@@ -1,6 +1,7 @@
 
 require'bivouac.init'
 require'util.player'
+require 'util.input'
 
 local COLUMNS = 2
 local ROWS = 3
@@ -45,7 +46,14 @@ end
 
 
 
-
+local function SlotHasItem(slot, has)
+    if has == nil then
+        return slot:LoadBoolean("HasStoredEntity", false)
+    else
+        slot:SaveBoolean("HasStoredEntity", has)
+        return has
+    end
+end
 
 ---Quick fix for right hand overriding left hand highlights
 ---@type table<integer,EntityHandle>
@@ -118,8 +126,8 @@ local hand_enter_icon_flag = false
 ---Get if a given hand is behind the player head.
 ---@param hand CPropVRHand
 ---@return boolean
-local function HandIsBehindHead(hand)
-    return Player.HMDAvatar:GetForwardVector():Dot((hand:GetOrigin() - Player.HMDAvatar:GetOrigin()):Normalized()) < -0.5
+local function HandIsBehindHead(hand, val)
+    return Player.HMDAvatar:GetForwardVector():Dot((hand:GetOrigin() - Player.HMDAvatar:GetOrigin()):Normalized()) < -(val or 0.5)
 end
 
 local function BackpackThink()
@@ -161,12 +169,15 @@ local function BackpackThink()
             else
                 local slot = GetNearestSlot(hand:GetGlove(), true, true)
                 hand_slot[hand:GetHandID()] = slot
-                if slot then
+                if slot and SlotHasItem(slot) then
                     if not hand_enter_icon_flag then
                         thisEntity:DisablePickup()
                         hand_enter_icon_flag = true
                     end
-                    if hand:IsButtonPressed(3) then
+                    -- if hand:IsButtonPressed(3) then
+                    print("checking for button press")
+                    if Input:Pressed(hand:GetHandID(), 3, true) then
+                        print("button press!")
                         thisEntity:GetPrivateScriptScope().TakeItemFromBackpack(slot, hand)
                     end
                 elseif hand_enter_icon_flag then
@@ -178,6 +189,13 @@ local function BackpackThink()
     end
     return 0
 end
+
+local function PrintItems()
+    for _, ent in ipairs(Entities:FindAllByName(SLOT_TARGETNAME)) do
+        print(ent:LoadString("debug_slot_index"), "has item", SlotHasItem(ent), "item", ent:LoadEntity("StoredEntity"))
+    end
+end
+thisEntity:GetPrivateScriptScope().PrintItems = PrintItems
 
 
 ---Take backpack out and make player grab it.
@@ -282,13 +300,15 @@ local function ItemReleased(data)
         print("Player released backpack")
         thisEntity:SetContextThink("transfer_hand_test", function()
             print("Checking if holding backpack before storing, possible hand transfer")
-            if not Player:IsHolding(thisEntity) and HandIsBehindHead(data.hand) then
+            print("\tIs holding", Player:IsHolding(thisEntity))
+            print("\tIs behind", HandIsBehindHead(data.hand))
+            if not Player:IsHolding(thisEntity) and HandIsBehindHead(data.hand, 0.2) then
                 PutOnBack()
             end
         end, 0.1)
     elseif data.item then
         local slot = GetNearestSlot(data.item)
-        if slot then
+        if slot and not SlotHasItem(slot) then
             print("Released item into slot", data.item:GetName())
             PutItemInBackpack(data.item, slot)
         end

@@ -59,25 +59,22 @@ LastHintDisplayed = nil
 ---@param skin "hint_1"|"hint_2"|"hint_3"
 ---@param attach 0|1|2 # 0 = none, 1 = primary hand, 2 = secondary hand
 function CreateHint(skin, attach)
-    print("Spawning hint")
+    if not Convars:GetBool("gameinstructor_enable") or Convars:GetBool("sv_gameinstructor_disable") then
+        return
+    end
+    -- print("Spawning hint")
     local hint = SpawnEntityFromTableSynchronous("prop_dynamic", {
         model = "models/bivouac/hint_panel.vmdl",
         vscripts = "bivouac/hint_panel",
         skin = skin,
         targetname = "hint_panel"
     })
-    print("post spawn")
     hint.attach = attach
-    -- for key, value in pairs(hint:GetPrivateScriptScope()) do
-    --     print(key,value)
-    -- end
     LastHintDisplayed = hint
     hint:GetPrivateScriptScope():ShowHint()
-    print("post show hint func")
 end
 
 function HideLastHint()
-    print("Hiding last hint")
     if LastHintDisplayed then
         LastHintDisplayed:GetPrivateScriptScope():HideHint()
         LastHintDisplayed = nil
@@ -204,6 +201,7 @@ RegisterPlayerEventCallback("vr_player_ready", function()
     if right_hand then
         Player.RightHand:MergeProp(right_hand, true)
     end
+    Input:StartTrackingOn(Player)
 end)
 
 

@@ -21,6 +21,29 @@
 					},
 				]
 			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = [  ]
+						use_global_default = false
+						global_default_material = ""
+					},
+					{
+						_class = "MaterialGroup"
+						name = "inverted"
+						remaps = 
+						[
+							{
+								from = "models/lowpoly/materials/compass.vmat"
+								to = "models/lowpoly/materials/compass_inverted.vmat"
+							},
+						]
+					},
+				]
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""

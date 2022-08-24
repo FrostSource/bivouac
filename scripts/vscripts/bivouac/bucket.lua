@@ -28,21 +28,19 @@ local function SetWaterLevel(level)
 end
 thisEntity:GetPrivateScriptScope().SetWaterLevel = SetWaterLevel
 
-local function FillFromPond(io)
-    print("Checking if bucket is up")
-    local fill_z = thisEntity:GetAttachmentOrigin(thisEntity:ScriptLookupAttachment('pour_pos')).z
-    local water_z = fill_z
-    if io.caller:GetClassname() == "trigger_multiple" then
-        print("caller is trigger")
-        water_z = io.caller:GetOrigin().z
-    end
-    print(fill_z, water_z, (fill_z - water_z))
-    if thisEntity:GetUpVector().z > 0 and (fill_z - water_z) < 0 then
-        SetWaterLevel(water_level + 0.02)
-        print("\tAdding water", water_level)
-    end
+local fill_from_pond = false
+
+local function StartFillFromPond(io)
+    print("StartFillFromPond")
+    fill_from_pond = true
 end
-thisEntity:GetPrivateScriptScope().FillFromPond = FillFromPond
+thisEntity:GetPrivateScriptScope().StartFillFromPond = StartFillFromPond
+
+local function StopFillFromPond(io)
+    print("StopFillFromPond")
+    fill_from_pond = false
+end
+thisEntity:GetPrivateScriptScope().StopFillFromPond = StopFillFromPond
 
 local function disposeParticle()
     if pour_pt then
@@ -66,11 +64,19 @@ local function PourThink()
     -- pour speed at full upside down
     local bottom_pour_value = 0.01
     local tip_value = RemapVal(water_level, 0, 1, bottom_tip_value, top_tip_value)
-    -- print("tip_value:",tip_value)
-    -- if thisEntity:GetUpVector().z > 0.8 then SetWaterLevel(1) end
     local this = thisEntity
-    print("thinking bucket")
-    if thisEntity:GetUpVector().z < tip_value then
+
+    if fill_from_pond then
+        -- print("Checking if bucket is up")
+        local fill_z = thisEntity:GetAttachmentOrigin(thisEntity:ScriptLookupAttachment('pour_pos')).z
+        -- hard coded
+        local water_z = -9.6
+        print(fill_z, water_z, (fill_z - water_z))
+        if thisEntity:GetUpVector().z >= 0 and (fill_z - water_z) < 4 then
+            SetWaterLevel(water_level + 0.02)
+            print("\tAdding water", water_level)
+        end
+    elseif thisEntity:GetUpVector().z < tip_value then
         local pour_pos = thisEntity:GetAttachmentOrigin(thisEntity:ScriptLookupAttachment('pour_pos'))
         local origin = CalcClosestPointOnEntityOBB(thisEntity, Vector(pour_pos.x, pour_pos.y, 0))
         local point = pour_pos + (origin - pour_pos):Normalized() * 6.5
@@ -101,16 +107,20 @@ local function PourThink()
             disposeParticle()
         end
     end
-    if water_level <= 0 then
+    if not fill_from_pond and water_level <= 0 then
+        thisEntity:StopSound("Bivouac.WaterPourLp")
         water_level = 0
         disposeParticle()
+        thisEntity:SaveBoolean("IsThinking", false)
         return nil
     end
     return 0
 end
 
 function DisablePour()
+    print("disable")
     if thisEntity:LoadBoolean("IsThinking", false) then
+        print("Bucket pouring is disabled")
         thisEntity:StopThink("PourThink")
         thisEntity:SaveBoolean("IsThinking", false)
     end
@@ -118,6 +128,7 @@ end
 -- thisEntity:GetPrivateScriptScope().DisablePour = DisablePour
 function EnablePour()
     if not thisEntity:LoadBoolean("IsThinking", false) then
+        print("Bucket pouring is enabled")
         thisEntity:SetThink(PourThink, "PourThink", 0)
         thisEntity:SaveBoolean("IsThinking", true)
     end

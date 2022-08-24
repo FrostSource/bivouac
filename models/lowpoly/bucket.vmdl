@@ -39,7 +39,7 @@
 							angles_left = [ 58.7995, 0.000003, 75.9161 ]
 							origin_right = [ 0.719586, -0.171911, 20.263599 ]
 							angles_right = [ 58.7995, -0.000007, -75.9161 ]
-							max_distance = 3.0
+							max_distance = 7.0
 							finger_thumb = 1.0
 							finger_pinky = 1.0
 							finger_ring = 1.0
@@ -49,15 +49,15 @@
 							show_extent_helper = false
 							extent_origin_left = [ 0.0, 0.0, 2.0 ]
 							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
-							extent_origin_right = [ 0.0, -0.0, 2.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
 							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
-							has_rotation = true
+							has_rotation = false
 							rotation_axis0 = [ 0.0, 10.0, 19.8 ]
 							rotation_axis1 = [ 0.0, -10.0, 19.8 ]
 							rotation_min = -90.0
 							rotation_max = 90.0
-							pivot_min = 90.0
-							pivot_max = 90.0
+							pivot_min = 0.0
+							pivot_max = 0.0
 						}
 					},
 					{
@@ -74,7 +74,7 @@
 							angles_left = [ 58.7995, 169.783, 75.9161 ]
 							origin_right = [ -0.420047, 0.021528, 20.263599 ]
 							angles_right = [ 58.799507, -169.783005, -75.9161 ]
-							max_distance = 3.0
+							max_distance = 7.0
 							finger_thumb = 1.0
 							finger_pinky = 1.0
 							finger_ring = 1.0
@@ -84,15 +84,15 @@
 							show_extent_helper = false
 							extent_origin_left = [ 0.0, 0.0, 2.0 ]
 							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
-							extent_origin_right = [ 0.0, -0.0, 2.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
 							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
-							has_rotation = true
+							has_rotation = false
 							rotation_axis0 = [ 0.0, 10.0, 19.8 ]
 							rotation_axis1 = [ 0.0, -10.0, 19.8 ]
 							rotation_min = -90.0
 							rotation_max = 90.0
-							pivot_min = 90.0
-							pivot_max = 90.0
+							pivot_min = 0.0
+							pivot_max = 0.0
 						}
 					},
 					{
@@ -119,7 +119,7 @@
 						{
 							handpose_bone = ""
 							handpose_model = "models/props/max/handposes/handpose_grabpole.vmdl"
-							allow_procedural_handpose = true
+							allow_procedural_handpose = false
 							global_pose_template = false
 						}
 					},

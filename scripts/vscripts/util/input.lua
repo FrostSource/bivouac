@@ -301,9 +301,13 @@ local function InputThink()
     return 0
 end
 
-ListenToGameEvent("player_spawn", function()
-    print("Initiating input think...")
-    Entities:GetLocalPlayer():SetContextThink("InputThink", InputThink, 0)
-end, nil)
+function Input:StartTrackingOn(ent)
+    ent:SetContextThink("InputThink", InputThink, 0)
+end
+
+-- ListenToGameEvent("player_activate", function()
+--     print("Initiating input think...")
+--     Entities:GetLocalPlayer():SetContextThink("InputThink", InputThink, 0)
+-- end, nil)
 
 

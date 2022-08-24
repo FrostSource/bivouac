@@ -58,6 +58,8 @@ local function DebugTeleportStonesToPortal()
     for _,ent in ipairs(Entities:FindAllByName("symbol_stone*")) do
         if ent:LoadBoolean("IsSymbolStone", false) then
             ent:SetOrigin(target:GetOrigin())
+            DoEntFireByInstanceHandle(ent, "EnableMotion", "", 0, nil, nil)
+            DoEntFireByInstanceHandle(ent, "EnablePickup", "", 0, nil, nil)
         end
     end
 end
@@ -111,5 +113,17 @@ local function DebugMonster()
     Teleport("@debug_monster")
 end
 Convars:RegisterCommand("bivouac_debug_monster", DebugMonster, "", 0)
+
+local function DebugGiveGloves()
+    DoEntFire("equip_debuggloves", "EquipNow", "", 0, nil, nil)
+end
+Convars:RegisterCommand("bivouac_debug_give_gloves", DebugGiveGloves, "", 0)
+
+local function DebugHole()
+    DoEntFire("trowel_constraint", "Break", "", 0, nil, nil)
+    Teleport("@debug_hole")
+    Teleport("@debug_hole_trowel")
+end
+Convars:RegisterCommand("bivouac_debug_hole", DebugHole, "", 0)
 
 -- if Flashlight then Flashlight:SaveBoolean('IsCharged', true) Flashlight:SetParent(Player, '') Flashlight:SetLocalOrigin(Vector(0,0,64)) Flashlight:SetLocalAngles(0,0,0) if not Flashlight:LoadBoolean('IsOn', false) then Flashlight:GetPrivateScriptScope().ToggleState() end end

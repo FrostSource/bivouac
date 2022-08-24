@@ -42,6 +42,14 @@
 							spawn_motion_disabled = false
 						}
 					},
+					{
+						_class = "GenericGameData"
+						game_class = "vr_carry_type"
+						game_keys = 
+						{
+							carry_type = "1"
+						}
+					},
 				]
 			},
 			{
