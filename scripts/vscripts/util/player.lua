@@ -420,6 +420,13 @@ function CBasePlayer:GetResin()
     return r
 end
 
+---Gets if player is holding an entity.
+---@param entity EntityHandle
+---@return boolean
+function CBasePlayer:IsHolding(entity)
+    return self.PrimaryHand.ItemHeld == entity or self.SecondaryHand.ItemHeld == entity
+end
+
 ---@type table<function,table|boolean>[]
 local registered_event_callbacks = {
     player_activate = {},

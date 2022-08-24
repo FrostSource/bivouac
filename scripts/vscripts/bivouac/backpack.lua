@@ -152,10 +152,10 @@ local function BackpackThink()
                     -- local slot = Entities:FindByNameNearest(SLOT_TARGETNAME, hand.ItemHeld:GetOrigin(), SLOT_PLACE_DIST)
                     local slot = GetNearestSlot(hand.ItemHeld, true, true)
                     hand_slot[hand:GetHandID()] = slot
-                    if slot then
+                    --if slot then
                         -- Actual storing is done in released callback
                         -- slot:SetRenderColor(255, 255, 0)
-                    end
+                    --end
                 end
             -- Not holding item, check for retrieving
             else
@@ -179,9 +179,6 @@ local function BackpackThink()
     return 0
 end
 
----Used to stop the item_pickup callback from setting
----`transferred_hand` on initial pull out.
-local backpack_just_pulled_out = false
 
 ---Take backpack out and make player grab it.
 ---@param hand CPropVRHand
@@ -196,7 +193,6 @@ local function TakeFromBack(hand)
     thisEntity:Grab(hand)
     thisEntity:SaveBoolean("BackpackStored", false)
     EmitSoundOn(SOUND_TAKE_BACKPACK, thisEntity)
-    backpack_just_pulled_out = true
 end
 thisEntity:GetPrivateScriptScope().TakeFromBack = TakeFromBack
 
@@ -271,12 +267,8 @@ local transferred_hand = false
 ---Pickup
 ---@param data PLAYER_EVENT_ITEM_PICKUP
 local function ItemPickup(data)
-    if data.item == thisEntity then
-        if not backpack_just_pulled_out then
-            transferred_hand = true
-        end
-        backpack_just_pulled_out = false
-    end
+    --if data.item == thisEntity then
+    --end
 end
 RegisterPlayerEventCallback("item_pickup", ItemPickup)
 
@@ -289,11 +281,10 @@ local function ItemReleased(data)
         -- for now just immediately
         print("Player released backpack")
         thisEntity:SetContextThink("transfer_hand_test", function()
-            print("Checking if tranferred hand", transferred_hand, HandIsBehindHead(data.hand))
-            if not transferred_hand and HandIsBehindHead(data.hand) then
+            print("Checking if holding backpack before storing, possible hand transfer")
+            if not Player:IsHolding(thisEntity) and HandIsBehindHead(data.hand) then
                 PutOnBack()
             end
-            transferred_hand = false
         end, 0.1)
     elseif data.item then
         local slot = GetNearestSlot(data.item)
