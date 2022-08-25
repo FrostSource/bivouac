@@ -81,11 +81,11 @@ function HideLastHint()
     end
 end
 function ShowFirstHint()
-    print("Showing first hint")
+    -- print("Showing first hint")
     CreateHint("hint_1", 2)
 end
 function ShowSecondHint()
-    print("Showing second hint")
+    -- print("Showing second hint")
     local hand = 1
     if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
         hand = 2
@@ -93,7 +93,7 @@ function ShowSecondHint()
     CreateHint("hint_2", hand)
 end
 function ShowThirdHint()
-    print("Showing third hint")
+    -- print("Showing third hint")
     local hand = 2
     if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
         hand = 1
@@ -176,7 +176,7 @@ RegisterPlayerEventCallback("player_activate", function(data)
     Backpack = Entities:FindByName(nil, "@backpack")
     -- If first time startup, put note in backpack for hints
     if not data.game_loaded and Backpack then
-        print("Putting start note in backpack")
+        -- print("Putting start note in backpack")
         local note = Entities:FindByName(nil, "note_1")
         Backpack:GetPrivateScriptScope().PutItemInBackpack(note, nil, true)
     end

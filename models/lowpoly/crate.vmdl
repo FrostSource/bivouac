@@ -14,7 +14,7 @@
 						game_class = "prop_data"
 						game_keys = 
 						{
-							base = ""
+							base = "Wooden.Large"
 							allowstatic = false
 							bakelighting = true
 							damage_table = ""
@@ -22,7 +22,7 @@
 							"dmg.club" = -1.0
 							"dmg.explosive" = -1.0
 							"dmg.fire" = -1.0
-							health = -1.0
+							health = 30.0
 							spawn_motion_disabled = false
 						}
 					},
@@ -86,6 +86,21 @@
 							exclude_by_default = false
 							exception_list = [  ]
 						}
+					},
+				]
+			},
+			{
+				_class = "ModelModifierList"
+				children = 
+				[
+					{
+						_class = "ModelModifier_ScaleAndMirror"
+						scale = 3.0
+						mirror_x = false
+						mirror_y = false
+						mirror_z = false
+						flip_bone_forward = false
+						swap_left_and_right_bones = false
 					},
 				]
 			},

@@ -16,11 +16,13 @@ end
 local function Thinker()
     -- needs to be refined to avoid slow peeks
     local loc = thisEntity:TransformPointWorldToEntity(Player:EyePosition())
-    if IsAcrossBoundary(loc) and not player_must_cross_boundary_first then
-        -- DoEntFire(thisEntity:GetName().."_tp", "Enable", "", 0, nil, nil)
-        thisEntity:FireOutput("OnUser1", thisEntity, thisEntity, nil, 0)
-        Player:EmitSound("ScriptedSeq.InnerVaultBubbleExpand")
-        return nil
+    if IsAcrossBoundary(loc) then
+        if not player_must_cross_boundary_first then
+            -- DoEntFire(thisEntity:GetName().."_tp", "Enable", "", 0, nil, nil)
+            thisEntity:FireOutput("OnUser1", thisEntity, thisEntity, nil, 0)
+            Player:EmitSound("ScriptedSeq.InnerVaultBubbleExpand")
+            return nil
+        end
     elseif player_must_cross_boundary_first then
         player_must_cross_boundary_first = false
     end

@@ -71,10 +71,10 @@ local function PourThink()
         local fill_z = thisEntity:GetAttachmentOrigin(thisEntity:ScriptLookupAttachment('pour_pos')).z
         -- hard coded
         local water_z = -9.6
-        print(fill_z, water_z, (fill_z - water_z))
+        -- print(fill_z, water_z, (fill_z - water_z))
         if thisEntity:GetUpVector().z >= 0 and (fill_z - water_z) < 4 then
             SetWaterLevel(water_level + 0.02)
-            print("\tAdding water", water_level)
+            -- print("\tAdding water", water_level)
         end
     elseif thisEntity:GetUpVector().z < tip_value then
         local pour_pos = thisEntity:GetAttachmentOrigin(thisEntity:ScriptLookupAttachment('pour_pos'))
@@ -119,9 +119,7 @@ local function PourThink()
 end
 
 function DisablePour()
-    print("disable")
     if thisEntity:LoadBoolean("IsThinking", false) then
-        print("Bucket pouring is disabled")
         thisEntity:StopThink("PourThink")
         thisEntity:SaveBoolean("IsThinking", false)
     end
@@ -129,7 +127,6 @@ end
 -- thisEntity:GetPrivateScriptScope().DisablePour = DisablePour
 function EnablePour()
     if not thisEntity:LoadBoolean("IsThinking", false) then
-        print("Bucket pouring is enabled")
         thisEntity:SetThink(PourThink, "PourThink", 0)
         thisEntity:SaveBoolean("IsThinking", true)
     end

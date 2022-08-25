@@ -35,12 +35,10 @@ local function Think()
         state = 1
     elseif state == 1 then
         if Grow() then
-            print("finished growing")
             state = 2
         end
     elseif state == 3 then
         if FadeOut() then
-            print("finished fading out")
             thisEntity:Kill()
             return nil
         end
@@ -57,7 +55,6 @@ end
 thisEntity:GetPrivateScriptScope().ShowHint = ShowHint
 
 local function HideHint()
-    print("Hiding hint in hint itself")
     state = 3
 end
 thisEntity:GetPrivateScriptScope().HideHint = HideHint

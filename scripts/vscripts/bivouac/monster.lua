@@ -55,7 +55,7 @@ util.SanitizeFunctionForHammer(Walk)
 
 local function Run()
     DoEntFireByInstanceHandle(thisEntity, "SetAnimation", "run", 0, nil, nil)
-    speed = 2.5 * 2
+    speed = 2.5 * 1.7
 end
 util.SanitizeFunctionForHammer(Run)
 

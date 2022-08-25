@@ -13,9 +13,7 @@ local last_steam_sound = 0
 local steam_sound_time = 0.3
 
 local function BucketOverFireThink()
-    -- print(1)
     if fire_pt then
-        -- print(2)
         local o = thisEntity:GetOrigin()
         if
         Bucket.is_pouring and
@@ -27,7 +25,6 @@ local function BucketOverFireThink()
                 last_steam_sound = Time()
                 StartSoundEventFromPosition("Bivouac.FireSteam", fire_pt:GetOrigin())
             end
-            -- print(fire_level)
             fire_scalar:SetOrigin(Vector(fire_level))
             thisEntity:SaveNumber("FireLevel", fire_level)
             if fire_level <= 0 then
@@ -70,12 +67,9 @@ Convars:RegisterCommand("debug_campfire_lower", DebugLowerFire, "", 0)
 
 
 local function ready(saveLoaded)
-    print('campfire create')
     fire_level = thisEntity:LoadNumber("FireLevel", 1)
     fire_pt = thisEntity:FindInPrefab("campfire_particle")--[[@as EntityHandle]]
-    print(fire_scalar)
     fire_scalar = thisEntity:FindInPrefab("campfire_scalar")--[[@as EntityHandle]]
-    print(fire_scalar)
     fire_scalar:SetOrigin(Vector(fire_level))
 end
 

@@ -136,7 +136,7 @@ local function BackpackThink()
             -- If hand is behind head
             if not hand.ItemHeld and HandIsBehindHead(hand) then
                 if not haptic_flags[hand] then
-                    print(hand:HandName(), "went behind head for grabbing backpack")
+                    -- print(hand:HandName(), "went behind head for grabbing backpack")
                     -- hand:FireHapticPulse(2)
                     hand:FireHapticPulsePrecise(500000)
                     haptic_flags[hand] = true
@@ -175,9 +175,7 @@ local function BackpackThink()
                         hand_enter_icon_flag = true
                     end
                     -- if hand:IsButtonPressed(3) then
-                    print("checking for button press")
                     if Input:Pressed(hand:GetHandID(), 3, true) then
-                        print("button press!")
                         thisEntity:GetPrivateScriptScope().TakeItemFromBackpack(slot, hand)
                     end
                 elseif hand_enter_icon_flag then
@@ -237,7 +235,6 @@ local function PutItemInBackpack(item, slot, silent)
     end
     print("Putting item in backpack", item:GetName(), slot:LoadString("debug_slot_index"))
     PutItemInStorage(item)
-    print("Spawning icon for stored item")
     local icon = SpawnEntityFromTableSynchronous("prop_dynamic_override",{
         model = item:GetModelName(),
         solid = "0",
@@ -266,9 +263,7 @@ local function TakeItemFromBackpack(slot, hand)
     local item = slot:LoadEntity("StoredEntity")
     if icon and has and item then
         item:SetOrigin(slot:GetOrigin())
-        print(icon:GetAngles())
         item:SetAngle(icon:GetAngles())
-        print(item:GetAngles())
         item:Grab(hand)
         -- DoEntFireByInstanceHandle(item, "DisableMotion", "", 0, nil, nil)
         icon:Kill()
@@ -297,11 +292,11 @@ local function ItemReleased(data)
     if data.item == thisEntity then
         -- Returning to back
         -- for now just immediately
-        print("Player released backpack")
+        -- print("Player released backpack")
         thisEntity:SetContextThink("transfer_hand_test", function()
-            print("Checking if holding backpack before storing, possible hand transfer")
-            print("\tIs holding", Player:IsHolding(thisEntity))
-            print("\tIs behind", HandIsBehindHead(data.hand))
+            -- print("Checking if holding backpack before storing, possible hand transfer")
+            -- print("\tIs holding", Player:IsHolding(thisEntity))
+            -- print("\tIs behind", HandIsBehindHead(data.hand))
             if not Player:IsHolding(thisEntity) and HandIsBehindHead(data.hand, 0.2) then
                 PutOnBack()
             end
@@ -309,7 +304,7 @@ local function ItemReleased(data)
     elseif data.item then
         local slot = GetNearestSlot(data.item)
         if slot and not SlotHasItem(slot) then
-            print("Released item into slot", data.item:GetName())
+            -- print("Released item into slot", data.item:GetName())
             PutItemInBackpack(data.item, slot)
         end
     end
