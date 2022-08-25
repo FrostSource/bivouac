@@ -79,7 +79,8 @@
 		{
 			_class = "C_INIT_CreateWithinSphere"
 			m_fRadiusMax = 256.0
-			m_vecDistanceBias = [ 1.0, 1.0, 0.0 ]
+			m_vecDistanceBias = [ -1.0, 0.3, 0.0 ]
+			m_vecDistanceBiasAbs = [ 1.0, 0.0, 0.0 ]
 		},
 		{
 			_class = "C_INIT_PositionPlaceOnGround"

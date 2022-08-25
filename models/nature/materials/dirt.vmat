@@ -7,7 +7,7 @@ Layer0
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "[0.886275 0.513726 0.341176 0.000000]"
+	TextureColor "[0.733333 0.415686 0.282353 0.000000]"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"

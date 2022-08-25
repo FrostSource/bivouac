@@ -38,7 +38,7 @@
 			m_bVisible = true
 			m_pLayerMask = null
 			m_nVibrance = 9
-			m_nSaturation = -45
+			m_nSaturation = -79
 		},
 		{
 			_class = "CBrightnessContrastColorCorrectionLayer"

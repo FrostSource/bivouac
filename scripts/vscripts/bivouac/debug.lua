@@ -33,11 +33,22 @@ Convars:RegisterCommand("bivouac_debug_portal_animate", DebugPortalAnimate, "", 
 local function DebugFillBucket()
     if Bucket then
         Bucket:GetPrivateScriptScope().SetWaterLevel(1)
+        -- Bucket:SetAngles(0,0,0)
     else
         Warning("Couldn't fill bucket because Bucket entity not found!")
     end
 end
 Convars:RegisterCommand("bivouac_debug_fill_bucket", DebugFillBucket, "", 0)
+
+local function DebugTipBucket()
+    if Bucket then
+        Bucket:SetOrigin(Bucket:GetOrigin() + Vector(0,0,20))
+        Bucket:SetAngles(0,0,180)
+    else
+        Warning("Couldn't tip bucket because Bucket entity not found!")
+    end
+end
+Convars:RegisterCommand("bivouac_debug_tip_bucket", DebugTipBucket, "", 0)
 
 local function DebugChargeFlashlight()
     if Flashlight then
@@ -125,5 +136,6 @@ local function DebugHole()
     Teleport("@debug_hole_trowel")
 end
 Convars:RegisterCommand("bivouac_debug_hole", DebugHole, "", 0)
+
 
 -- if Flashlight then Flashlight:SaveBoolean('IsCharged', true) Flashlight:SetParent(Player, '') Flashlight:SetLocalOrigin(Vector(0,0,64)) Flashlight:SetLocalAngles(0,0,0) if not Flashlight:LoadBoolean('IsOn', false) then Flashlight:GetPrivateScriptScope().ToggleState() end end

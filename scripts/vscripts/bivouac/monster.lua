@@ -7,7 +7,7 @@ local speed = 0
 local trace_down = true
 local kill_dist = 116
 local has_killed = false
-local footstep_time = 0.26
+local footstep_time = 0.23--0.26
 local footstep_timer = 0
 
 local function Think()
@@ -55,7 +55,7 @@ util.SanitizeFunctionForHammer(Walk)
 
 local function Run()
     DoEntFireByInstanceHandle(thisEntity, "SetAnimation", "run", 0, nil, nil)
-    speed = 2.5 * 1.5
+    speed = 2.5 * 2
 end
 util.SanitizeFunctionForHammer(Run)
 

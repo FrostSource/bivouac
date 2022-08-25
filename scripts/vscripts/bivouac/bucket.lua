@@ -110,6 +110,7 @@ local function PourThink()
     if not fill_from_pond and water_level <= 0 then
         thisEntity:StopSound("Bivouac.WaterPourLp")
         water_level = 0
+        this.is_pouring = false
         disposeParticle()
         thisEntity:SaveBoolean("IsThinking", false)
         return nil

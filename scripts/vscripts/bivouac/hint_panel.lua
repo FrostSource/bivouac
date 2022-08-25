@@ -62,14 +62,14 @@ local function HideHint()
 end
 thisEntity:GetPrivateScriptScope().HideHint = HideHint
 
----@param context CScriptPrecacheContext
-function Precache(context)
-    -- PrecacheModel(thisEntity:GetModelName(), context)
-    print("start precache")
-    PrecacheEntityFromTable("prop_dynamic", {
-        model = "models/bivouac/hint_panel.vmdl",
-        skin = "default",
-        targetname = "hint_panel"
-    }, context)
-    print("end precache")
-end
+-- ---@param context CScriptPrecacheContext
+-- function Precache(context)
+--     -- PrecacheModel(thisEntity:GetModelName(), context)
+--     print("start precache")
+--     PrecacheEntityFromTable("prop_dynamic", {
+--         model = "models/bivouac/hint_panel.vmdl",
+--         skin = "default",
+--         targetname = "hint_panel"
+--     }, context)
+--     print("end precache")
+-- end

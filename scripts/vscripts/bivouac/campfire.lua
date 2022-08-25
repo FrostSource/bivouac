@@ -7,17 +7,17 @@ local fire_level = 1
 ---@type EntityHandle
 local fire_scalar = 2
 
-local fire_putout_multiplier = 0.3
+local fire_putout_multiplier = 0.6
 
 local last_steam_sound = 0
-local steam_sound_time = 0.4
+local steam_sound_time = 0.3
 
 local function BucketOverFireThink()
     -- print(1)
     if fire_pt then
         -- print(2)
         local o = thisEntity:GetOrigin()
-        if 
+        if
         Bucket.is_pouring and
         VectorDistance(Vector(Bucket.pour_position.x,Bucket.pour_position.y,0),Vector(o.x,o.y,0)) < 20
         -- VectorDistance(Vector(Bucket:GetOrigin().x,Bucket:GetOrigin().y,0),Vector(o.x,o.y,0)) < 20

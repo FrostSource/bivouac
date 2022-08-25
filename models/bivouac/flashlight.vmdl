@@ -52,9 +52,9 @@
 							conform_fingers = false
 							allow_flip = false
 							parent_bone = ""
-							origin_left = [ -1.6978, 1.35187, -0.070023 ]
+							origin_left = [ -1.6978, 0.973374, -0.070023 ]
 							angles_left = [ 27.741602, 0.0, 0.0 ]
-							origin_right = [ -1.6978, -1.35187, -0.070023 ]
+							origin_right = [ -1.6978, -0.973374, -0.070023 ]
 							angles_right = [ 27.7416, 0.0, 0.0 ]
 							max_distance = 6.0
 							finger_thumb = 0.477
