@@ -16,9 +16,9 @@
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
 				m_nVectorComponent = 0
-				m_flRandomMin = 5.0
-				m_flRandomMax = 5.0
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flRandomMin = 1.0
+				m_flRandomMax = 1.0
+				m_nRandomMode = "PF_RANDOM_MODE_VARYING"
 				m_flLOD0 = 0.0
 				m_flLOD1 = 0.0
 				m_flLOD2 = 0.0
@@ -39,6 +39,13 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+		},
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_bSetOnce = true
+			m_nCP1 = 0
+			m_vecCP1Pos = [ 1.0, 0.0, 0.0 ]
+			m_bDisableOperator = true
 		},
 	]
 	m_Emitters = 

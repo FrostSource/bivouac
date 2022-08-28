@@ -32,7 +32,7 @@
 						[
 							{
 								from = "rendermeshshape0.vmat"
-								to = "models/nature/materials/colortan.vmat"
+								to = "models/lowpoly/materials/colorskin.vmat"
 							},
 						]
 						use_global_default = false

@@ -51,11 +51,11 @@
 							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
 							extent_origin_right = [ 0.0, 0.0, -2.0 ]
 							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
-							has_rotation = false
+							has_rotation = true
 							rotation_axis0 = [ 0.0, 10.0, 19.8 ]
 							rotation_axis1 = [ 0.0, -10.0, 19.8 ]
-							rotation_min = -90.0
-							rotation_max = 90.0
+							rotation_min = 60.0
+							rotation_max = 60.0
 							pivot_min = 0.0
 							pivot_max = 0.0
 						}
@@ -86,11 +86,11 @@
 							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
 							extent_origin_right = [ 0.0, 0.0, -2.0 ]
 							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
-							has_rotation = false
+							has_rotation = true
 							rotation_axis0 = [ 0.0, 10.0, 19.8 ]
 							rotation_axis1 = [ 0.0, -10.0, 19.8 ]
-							rotation_min = -90.0
-							rotation_max = 90.0
+							rotation_min = 60.0
+							rotation_max = 60.0
 							pivot_min = 0.0
 							pivot_max = 0.0
 						}

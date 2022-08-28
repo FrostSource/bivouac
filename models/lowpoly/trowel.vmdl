@@ -96,6 +96,42 @@
 							global_pose_template = false
 						}
 					},
+					{
+						_class = "GenericGameData"
+						name = "_copy"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "cylinder_idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = ""
+							origin_left = [ -3.62593, 0.707292, -0.275965 ]
+							angles_left = [ -86.7813, -0.000017, 0.000027 ]
+							origin_right = [ -3.62593, -1.34593, -0.275965 ]
+							angles_right = [ -86.7813, 0.000017, -0.000027 ]
+							max_distance = 10.0
+							finger_thumb = 0.756
+							finger_pinky = 0.772
+							finger_ring = 0.74
+							finger_middle = 0.718
+							finger_index = 0.789
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, -0.0, -2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
 				]
 			},
 			{

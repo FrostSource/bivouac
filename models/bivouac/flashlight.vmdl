@@ -96,6 +96,41 @@
 							carry_type = "0"
 						}
 					},
+					{
+						_class = "GenericGameData"
+						game_class = "hand_pose_pair"
+						game_keys = 
+						{
+							sequence = "cylinder_idle"
+							pose_special_type = "0"
+							conform_fingers = false
+							allow_flip = false
+							parent_bone = ""
+							origin_left = [ -0.491372, 0.973374, -0.576476 ]
+							angles_left = [ -89.1533, 0.0, 0.0 ]
+							origin_right = [ -0.491372, -0.973374, -0.576476 ]
+							angles_right = [ -89.153297, -0.0, 0.0 ]
+							max_distance = 6.0
+							finger_thumb = 1.0
+							finger_pinky = 0.697
+							finger_ring = 0.767
+							finger_middle = 0.767
+							finger_index = 0.762
+							has_extent = false
+							show_extent_helper = false
+							extent_origin_left = [ 0.0, -0.0, -2.0 ]
+							extent_origin_min_left = [ 0.0, 0.0, -1.0 ]
+							extent_origin_right = [ 0.0, 0.0, -2.0 ]
+							extent_origin_min_right = [ 0.0, 0.0, 1.0 ]
+							has_rotation = false
+							rotation_axis0 = [ 0.0, 0.0, 10.0 ]
+							rotation_axis1 = [ 0.0, 0.0, -10.0 ]
+							rotation_min = 0.0
+							rotation_max = 0.0
+							pivot_min = 0.0
+							pivot_max = 0.0
+						}
+					},
 				]
 			},
 			{
