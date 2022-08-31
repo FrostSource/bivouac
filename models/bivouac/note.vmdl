@@ -191,6 +191,17 @@
 							},
 						]
 					},
+					{
+						_class = "MaterialGroup"
+						name = "note_5"
+						remaps = 
+						[
+							{
+								from = "models/bivouac/materials/note_1.vmat"
+								to = "models/bivouac/materials/note_5.vmat"
+							},
+						]
+					},
 				]
 			},
 			{
