@@ -3,7 +3,7 @@
     "Inventory.BackpackGrab" =
     {
         type = "hlvr_default_3d"
-        volume = 2
+        volume = 3.2
         volume_falloff_min = 128
         volume_falloff_max = 512
         vsnd_files =
@@ -119,9 +119,9 @@
     "Bivouac.RopeTie" =
     {
         type = "hlvr_default_3d"
-        volume = 1.5
-        volume_falloff_min = 90
-        volume_falloff_max = 250
+        volume = 2.0
+        volume_falloff_min = 150
+        volume_falloff_max = 400
         vsnd_files =
         [
             "sounds/bivouac/rope_tie.vsnd",
