@@ -175,7 +175,7 @@ RegisterPlayerEventCallback("player_activate", function(data)
 
     Backpack = Entities:FindByName(nil, "@backpack")
     -- If first time startup, put note in backpack for hints
-    if not data.game_loaded and Backpack then
+    if not data.game_loaded and Backpack and GetMapName() == "bivouac" then
         -- print("Putting start note in backpack")
         local note = Entities:FindByName(nil, "note_1")
         Backpack:GetPrivateScriptScope().PutItemInBackpack(note, nil, true)

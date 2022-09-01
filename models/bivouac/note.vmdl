@@ -12,7 +12,7 @@
 					{
 						_class = "RenderMeshFile"
 						filename = "models\\bivouac\\dmx\\mesh\\note_mesh.dmx"
-						import_scale = 1.0
+						import_scale = 0.8
 						import_filter = 
 						{
 							exclude_by_default = false
@@ -140,12 +140,24 @@
 				[
 					{
 						_class = "PhysicsShapeBox"
+						name = "original"
+						disabled = true
 						parent_bone = ""
 						surface_prop = "prop.paper"
 						collision_prop = "default"
 						origin = [ -1.445657, 0.031951, 0.006105 ]
 						angles = [ 0.0, 0.0, 0.0 ]
 						dimensions = [ 13.045381, 10.064204, 0.338574 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "scaled"
+						parent_bone = ""
+						surface_prop = "prop.paper"
+						collision_prop = "default"
+						origin = [ -1.19246, 0.009553, 0.006105 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 10.56292, 8.243832, 0.338574 ]
 					},
 				]
 			},
@@ -217,6 +229,15 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "backpack_offset"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, -0.3 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 				]
 			},
 			{
@@ -233,6 +254,7 @@
 						swap_left_and_right_bones = false
 					},
 				]
+				disabled = true
 			},
 		]
 		model_archetype = "physics_prop_model"

@@ -64,12 +64,24 @@
 				[
 					{
 						_class = "PhysicsShapeBox"
+						name = "original"
+						disabled = true
 						parent_bone = ""
 						surface_prop = "prop.wood_crate_large"
 						collision_prop = "default"
 						origin = [ 0.021937, 0.042827, 7.833569 ]
 						angles = [ 0.0, 0.0, 0.0 ]
 						dimensions = [ 15.881845, 15.875303, 15.95537 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "scaled"
+						parent_bone = ""
+						surface_prop = "prop.wood_crate_large"
+						collision_prop = "default"
+						origin = [ 0.0, 0.0, 24.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 48.0, 48.0, 48.0 ]
 					},
 				]
 			},
@@ -80,7 +92,7 @@
 					{
 						_class = "RenderMeshFile"
 						filename = "models/lowpoly/mesh/Crate.fbx"
-						import_scale = 1.0
+						import_scale = 3.0
 						import_filter = 
 						{
 							exclude_by_default = false
@@ -101,6 +113,31 @@
 						mirror_z = false
 						flip_bone_forward = false
 						swap_left_and_right_bones = false
+					},
+				]
+				disabled = true
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "backpack_angle"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "backpack_offset"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, -0.6 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
 					},
 				]
 			},
