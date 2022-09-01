@@ -133,6 +133,27 @@ function SetWindValue(value)
     SetOpvarFloatAll('hlvr_global_opvars', 'opvars', 'wind_val_raw', value)
 end
 
+function ForestAmbientOneShot()
+    local target, max_dist = nil, 0
+    local player_origin = Player:GetOrigin()
+    local targets = Entities:FindAllByNameWithin("forest_ambient_oneshot_target", player_origin, 1024)
+    for _, trgt in ipairs(targets) do
+        local dist = VectorDistance(trgt:GetOrigin(), player_origin)
+        if dist > max_dist then
+            target = trgt
+            max_dist = dist
+        end
+    end
+    local xy_max_dist = 256
+    local z_max_dist = 32
+    local rnd_pos = Vector(
+        RandomInt(-xy_max_dist,xy_max_dist),
+        RandomInt(-xy_max_dist,xy_max_dist),
+        RandomInt(-z_max_dist, z_max_dist)
+    )
+    StartSoundEventFromPosition("Bivouac.VariedForestAmbienceOneShot", target:GetOrigin() + rnd_pos)
+end
+
 -- ---Add a function to the global scope with alternate casing styles.
 -- ---Makes a function easier to call from Hammer through I/O.
 -- ---@param func function # The function to sanitize.

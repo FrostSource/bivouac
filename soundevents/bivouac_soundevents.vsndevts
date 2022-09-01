@@ -324,5 +324,34 @@
     }
 
 
+    "Bivouac.VariedForestAmbienceOneShot" =
+    {
+        type = "hlvr_default_3d"
+        volume = 1.0
+        volume_falloff_min = 128
+        volume_falloff_max = 1500
+        vsnd_files =
+        [
+            "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_01.vsnd",
+            "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_02.vsnd",
+            "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_05.vsnd",
+
+            "sounds/copyright/nature/foliage_dry_crush_squeeze_crunchy_crispy_thick_02.vsnd",
+            "sounds/copyright/nature/foliage_dry_crush_squeeze_crunchy_crispy_thick_04.vsnd",
+
+            "sounds/copyright/nature/footstep_twig_snap_forest_floor_001.vsnd",
+            "sounds/copyright/nature/footstep_twig_snap_forest_floor_002.vsnd",
+            
+            "sounds/copyright/nature/leaves_rip_tear_001.vsnd",
+            "sounds/copyright/nature/leaves_rip_tear_002.vsnd",
+            "sounds/copyright/nature/leaves_rip_tear_003.vsnd",
+            
+            "sounds/copyright/nature/tree_branch_thick_healthy_leaves_movement_rustle_short_01.vsnd",
+            "sounds/copyright/nature/tree_branch_thick_healthy_leaves_movement_rustle_short_02.vsnd",
+            "sounds/copyright/nature/tree_branch_thick_healthy_leaves_movement_rustle_short_03.vsnd",
+            
+            "sounds/copyright/nature/animals_bird_turkey_baby_bush_run_away_scared_dried_leaves.vsnd",
+        ]
+    }
     
 }
