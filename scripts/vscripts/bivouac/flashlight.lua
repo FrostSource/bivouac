@@ -53,6 +53,7 @@ local function BatteryInserted(io)
         battery_trigger:Disable()
         thisEntity:SaveNumber("BatteriesInserted", 2)
         thisEntity:SaveBoolean("IsCharged", true)
+        CreateHint("hint_flashlight_button", 3, thisEntity)
     else
         print("\tFirst battery")
         -- add battery
@@ -73,14 +74,23 @@ local function BatteryInserted(io)
 end
 util.SanitizeFunctionForHammer(BatteryInserted)
 
+
+local function EndHint()
+    if not thisEntity:LoadBoolean("done_button_hint", false) then
+        HideLastHint()
+        thisEntity:SaveBoolean("done_button_hint", true)
+    end
+end
+
 ---Callback for grenade button press
 ---@param data INPUT_CALLBACK
 local function ButtonPress(data)
     if data.hand.ItemHeld == thisEntity then
+        thisEntity:EmitSound(SOUND_BUTTON)
         print("Player pressed flashlight button, checking if charged")
         if thisEntity:LoadBoolean("IsCharged", false) then
             print("\tFlashlight charged")
-            thisEntity:EmitSound(SOUND_BUTTON)
+            EndHint()
             ToggleState()
         end
     end

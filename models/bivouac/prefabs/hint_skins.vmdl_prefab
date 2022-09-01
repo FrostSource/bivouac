@@ -11,28 +11,45 @@
 				[
 					{
 						_class = "MaterialGroup"
-						name = "hint_1"
-						remaps = [  ]
-					},
-					{
-						_class = "MaterialGroup"
-						name = "hint_2"
+						name = "hint_backpack_take"
 						remaps = 
 						[
 							{
 								from = "models/bivouac/materials/hint_1.vmat"
-								to = "models/bivouac/materials/hint_2.vmat"
+								to = "models/bivouac/materials/hint_backpack_take.vmat"
 							},
 						]
 					},
 					{
 						_class = "MaterialGroup"
-						name = "hint_3"
+						name = "hint_backpack_item"
 						remaps = 
 						[
 							{
 								from = "models/bivouac/materials/hint_1.vmat"
-								to = "models/bivouac/materials/hint_3.vmat"
+								to = "models/bivouac/materials/hint_backpack_item.vmat"
+							},
+						]
+					},
+					{
+						_class = "MaterialGroup"
+						name = "hint_backpack_put"
+						remaps = 
+						[
+							{
+								from = "models/bivouac/materials/hint_1.vmat"
+								to = "models/bivouac/materials/hint_backpack_put.vmat"
+							},
+						]
+					},
+					{
+						_class = "MaterialGroup"
+						name = "hint_flashlight_button"
+						remaps = 
+						[
+							{
+								from = "models/bivouac/materials/hint_1.vmat"
+								to = "models/bivouac/materials/hint_flashlight_button.vmat"
 							},
 						]
 					},

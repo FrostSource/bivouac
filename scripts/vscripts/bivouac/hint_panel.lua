@@ -22,11 +22,9 @@ end
 
 local function Think()
 ---@diagnostic disable-next-line: undefined-field
-    if thisEntity.attach == 1 then
-        thisEntity:SetOrigin(Player.PrimaryHand:GetCenter() + z_offset)
----@diagnostic disable-next-line: undefined-field
-    elseif thisEntity.attach == 2 then
-        thisEntity:SetOrigin(Player.SecondaryHand:GetCenter() + z_offset)
+    if thisEntity.attach_entity then
+        ---@diagnostic disable-next-line: undefined-field, param-type-mismatch
+        thisEntity:SetOrigin(thisEntity.attach_entity:GetOrigin() + z_offset)
     end
 
     thisEntity:SetForwardVector((Player:EyePosition() - thisEntity:GetOrigin()):Normalized())
