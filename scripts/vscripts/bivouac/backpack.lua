@@ -68,9 +68,10 @@ local function PutItemInStorage(ent)
     ent:Drop()
     util.Delay(function()
     local storage_ent = Entities:FindByName(nil, "@backpack_storage")
-    print("Storage pos", storage_ent:GetOrigin())
+    -- print("Storage pos", storage_ent:GetOrigin())
     ent:SetOrigin(storage_ent:GetOrigin())
-    print(ent:GetOrigin())
+    ent:SetRenderAlpha(0)
+    -- print(ent:GetOrigin())
     end, 0.01)
 end
 
@@ -233,6 +234,10 @@ local function PutItemInBackpack(item, slot, silent)
     if slot == nil then
         slot = GetFirstFreeSlot()
     end
+    if not slot then
+        Warning("Trying to place item in occupied backpack slot!")
+        return
+    end
     print("Putting item in backpack", item:GetName(), slot:LoadString("debug_slot_index"))
     PutItemInStorage(item)
     local icon = SpawnEntityFromTableSynchronous("prop_dynamic_override",{
@@ -240,11 +245,23 @@ local function PutItemInBackpack(item, slot, silent)
         solid = "0",
         disableshadows = "1",
     })
-    icon:SetParent(slot, "")
-    icon:SetLocalOrigin(Vector())
+    -- Attachments must be modified by scale to get original value.
+    -- If model uses scale modifier then retrieving the original value is not possible.
     local angle = item:TransformPointWorldToEntity(item:GetAttachmentOrigin(item:ScriptLookupAttachment("backpack_angle")))
+    -- print("pre scale angle", angle)
+    angle = angle / item:GetAbsScale()
+    local offset = item:TransformPointWorldToEntity(item:GetAttachmentOrigin(item:ScriptLookupAttachment("backpack_offset")))
+    -- print("pre scale offset", offset)
+    offset = offset / item:GetAbsScale()
+    -- print("Putting "..item:GetModelName().." in backpack"
+    --     .." at angle ["..angle.x..","..angle.y..","..angle.z.."]"
+    --     ..", offset ["..offset.x..","..offset.y..","..offset.z.."]"
+    --     ..", at scale "..item:GetAbsScale()
+    --     .."\n"
+    -- )
+    icon:SetParent(slot, "")
+    icon:SetLocalOrigin(offset)
     icon:SetLocalAngles(angle.x,angle.y,angle.z)
-    -- icon:SetLocalAngles(0,0,0)
     -- size I want it to be divided by current size
     icon:SetAbsScale(ICON_PREVIEW_SIZE / icon:GetMaxSize())
     icon:SetMaterialGroupHash(item:GetMaterialGroupHash())
@@ -262,6 +279,7 @@ local function TakeItemFromBackpack(slot, hand)
     local has = slot:LoadBoolean("HasStoredEntity", false)
     local item = slot:LoadEntity("StoredEntity")
     if icon and has and item then
+        item:SetRenderAlpha(255)
         item:SetOrigin(slot:GetOrigin())
         item:SetAngle(icon:GetAngles())
         item:Grab(hand)
@@ -272,6 +290,10 @@ local function TakeItemFromBackpack(slot, hand)
     end
 end
 thisEntity:GetPrivateScriptScope().TakeItemFromBackpack = TakeItemFromBackpack
+
+function CBaseEntity:PutInBackpack()
+    PutItemInBackpack(self, nil, true)
+end
 
 ---Used to check if player is grabbing backpack with other hand
 ---while behind the head, stop storing for that case
