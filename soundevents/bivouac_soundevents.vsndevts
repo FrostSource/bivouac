@@ -323,13 +323,27 @@
         vsnd_files = "sounds/player/general/flesh_burn.vsnd"
     }
 
-
-    "Bivouac.VariedForestAmbienceOneShot" =
+    "Bivouac.BushRustle" =
     {
         type = "hlvr_default_3d"
         volume = 1.0
         volume_falloff_min = 128
         volume_falloff_max = 1500
+        vsnd_files =
+        [
+            "sounds/copyright/nature/animals_bird_turkey_baby_bush_run_away_scared_dried_leaves.vsnd",
+        ]
+    }
+
+
+    "Bivouac.VariedForestAmbienceOneShot" =
+    {
+        type = "hlvr_default_3d"
+        //volume = 1.0
+        volume_rand_min = 0.5
+        volume_rand_max = 1.8
+        volume_falloff_min = 64
+        volume_falloff_max = 2048
         vsnd_files =
         [
             "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_01.vsnd",

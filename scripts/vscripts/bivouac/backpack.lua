@@ -70,7 +70,9 @@ local function PutItemInStorage(ent)
     local storage_ent = Entities:FindByName(nil, "@backpack_storage")
     -- print("Storage pos", storage_ent:GetOrigin())
     ent:SetOrigin(storage_ent:GetOrigin())
-    ent:SetRenderAlpha(0)
+    if ent ~= thisEntity then
+        ent:SetRenderAlpha(0)
+    end
     -- print(ent:GetOrigin())
     end, 0.01)
 end
@@ -216,7 +218,6 @@ thisEntity:GetPrivateScriptScope().TakeFromBack = TakeFromBack
 ---Put backpack away.
 ---@param silent boolean?
 local function PutOnBack(silent)
-    HideLastHint()
     print("Putting backpack on back")
     thisEntity:Drop()
     PutItemInStorage(thisEntity)
@@ -320,6 +321,7 @@ local function ItemReleased(data)
             -- print("\tIs holding", Player:IsHolding(thisEntity))
             -- print("\tIs behind", HandIsBehindHead(data.hand))
             if not Player:IsHolding(thisEntity) and HandIsBehindHead(data.hand, 0.2) then
+                EndBackpackHints()
                 PutOnBack()
             end
         end, 0.1)

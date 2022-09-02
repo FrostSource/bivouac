@@ -85,30 +85,40 @@ function HideLastHint()
     end
 end
 function EndBackpackHints()
-    if Player:LoadBoolean("backpackhints", true) then
+    print("Ending backpack hints")
+    -- local t = {} Player:GatherCriteria(t) for k,v in pairs(t) do print(k,v) end
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        print('enindg')
+        HideLastHint()
         DoEntFire("relay_first_note_hint", "Disable", "", 0, nil, nil)
-        Player:SaveBoolean("backpackhints", false)
+        Player:SaveBoolean("done_backpackhints", true)
     end
 end
 function ShowFirstHint()
-    -- print("Showing first hint")
-    CreateHint("hint_backpack_take", 2)
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        -- print("Showing first hint")
+        CreateHint("hint_backpack_take", 2)
+    end
 end
 function ShowSecondHint()
-    -- print("Showing second hint")
-    local hand = 1
-    if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
-        hand = 2
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        -- print("Showing second hint")
+        local hand = 1
+        if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
+            hand = 2
+        end
+        CreateHint("hint_backpack_item", hand)
     end
-    CreateHint("hint_backpack_item", hand)
 end
 function ShowThirdHint()
-    -- print("Showing third hint")
-    local hand = 2
-    if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
-        hand = 1
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        -- print("Showing third hint")
+        local hand = 2
+        if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
+            hand = 1
+        end
+        CreateHint("hint_backpack_put", hand)
     end
-    CreateHint("hint_backpack_put", hand)
 end
 
 local PortalScreenFog = -1
@@ -136,14 +146,15 @@ end
 function ForestAmbientOneShot()
     local target, max_dist = nil, 0
     local player_origin = Player:GetOrigin()
-    local targets = Entities:FindAllByNameWithin("forest_ambient_oneshot_target", player_origin, 1024)
-    for _, trgt in ipairs(targets) do
-        local dist = VectorDistance(trgt:GetOrigin(), player_origin)
-        if dist > max_dist then
-            target = trgt
-            max_dist = dist
-        end
-    end
+    local targets = Entities:FindAllByNameWithin("forest_ambient_oneshot_target", player_origin, 1500)
+    target = targets[RandomInt(1,#targets)]
+    -- for _, trgt in ipairs(targets) do
+    --     local dist = VectorDistance(trgt:GetOrigin(), player_origin)
+    --     if dist > max_dist then
+    --         target = trgt
+    --         max_dist = dist
+    --     end
+    -- end
     local xy_max_dist = 256
     local z_max_dist = 32
     local rnd_pos = Vector(
@@ -152,6 +163,14 @@ function ForestAmbientOneShot()
         RandomInt(-z_max_dist, z_max_dist)
     )
     StartSoundEventFromPosition("Bivouac.VariedForestAmbienceOneShot", target:GetOrigin() + rnd_pos)
+end
+
+function TestHint()
+    print('test hint doing')
+    FireGameEvent("vr_controller_hint_create", {
+		hint_name = "Lesson - Teach Grenade",
+		hint_dominant_hand = true,
+    })
 end
 
 -- ---Add a function to the global scope with alternate casing styles.
