@@ -1,0 +1,215 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{10b35a8e-b1ee-4f14-87a6-a7b6aae37699} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_ConstantColor = 
+	[
+		183,
+		0,
+		0,
+		255,
+	]
+	m_flConstantLifespan = 0.500000
+	m_nMaxParticles = 24
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = 1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.500000
+			m_flBias = 0.900000
+		},
+		{
+			_class = "C_OP_RemapCPtoScalar"
+			m_nCPInput = 1
+			m_nFieldOutput = "16"
+		},
+		{
+			_class = "C_OP_MaintainSequentialPath"
+			m_flNumToAssign = 24.000000
+			m_PathParams = 
+			{
+				m_nEndControlPointNumber = 3
+			}
+		},
+		{
+			_class = "C_OP_SetFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_PARTICLE_FLOAT"
+				m_nMapType = "PF_MAP_TYPE_CURVE"
+				m_nScalarAttribute = 18
+				m_Curve = 
+				{
+					m_spline = 
+					[
+						{
+							x = 0.000000
+							y = 0.000000
+							m_flSlopeIncoming = 0.026860
+							m_flSlopeOutgoing = 0.026860
+						},
+						{
+							x = 0.801101
+							y = 0.106560
+							m_flSlopeIncoming = 0.415495
+							m_flSlopeOutgoing = 0.415495
+						},
+						{
+							x = 1.000000
+							y = 0.250000
+							m_flSlopeIncoming = 0.721170
+							m_flSlopeOutgoing = 0.721170
+						},
+					]
+					m_tangents = 
+					[
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_FREE"
+							m_nOutgoingTangent = "CURVE_TANGENT_MIRROR"
+						},
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_FREE"
+							m_nOutgoingTangent = "CURVE_TANGENT_MIRROR"
+						},
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
+							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
+						},
+					]
+					m_vDomainMins = 
+					[
+						0.000000,
+						0.000000,
+					]
+					m_vDomainMaxs = 
+					[
+						1.000000,
+						0.250000,
+					]
+				}
+			}
+			m_nOutputField = "7"
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_flAnimationRate = 0.000000
+			m_flSelfIllumAmount = 1.364000
+			m_hTexture = resource:"materials/particle/particle_glow_04.vtex"
+			m_flDiffuseAmount = 0.000000
+			VisibilityInputs = 
+			{
+				m_flAlphaScaleMin = 1.000000
+				m_flAlphaScaleMax = 0.200000
+				m_flDotInputMin = -1.000000
+				m_nCPin = 0
+				m_bRightEye = true
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				107,
+				107,
+				107,
+				255,
+			]
+			m_ColorMax = 
+			[
+				95,
+				95,
+				95,
+				255,
+			]
+		},
+		{
+			_class = "C_INIT_CreateSequentialPath"
+			m_flNumToAssign = 24.000000
+			m_PathParams = 
+			{
+				m_nEndControlPointNumber = 3
+			}
+		},
+		{
+			_class = "C_INIT_DistanceToCPInit"
+			m_flInputMax = 12.000000
+			m_flOutputMin = 1.000000
+			m_flOutputMax = 5.000000
+		},
+		{
+			_class = "C_INIT_DistanceToCPInit"
+			m_nFieldOutput = "7"
+			m_flInputMax = 12.000000
+			m_flOutputMin = 0.100000
+			m_flOutputMax = 0.000000
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_DistanceToCPInit"
+			m_nFieldOutput = "18"
+			m_flInputMax = 12.000000
+			m_flOutputMin = 1.000000
+			m_flOutputMax = 0.000000
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 24
+			m_flStartTime = 0.100000
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						null,
+						null,
+						null,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_nBehaviorVersion = 6
+	m_nFirstMultipleOverride_BackwardCompat = 3
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_nCP1 = 3
+			m_vecCP1Pos = 
+			[
+				12.000000,
+				0.000000,
+				0.000000,
+			]
+		},
+	]
+}

@@ -26,4 +26,9 @@
     },
     "Lua.semantic.keyword": false,
     "Lua.hover.expandAlias": false,
+    "Lua.completion.showParams": true,
+    "Lua.hint.paramType": true,
+    "Lua.hover.viewNumber": true,
+    "Lua.format.enable": true,
+    "Lua.hint.paramName": "Disable",
 }

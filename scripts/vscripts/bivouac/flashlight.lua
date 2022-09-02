@@ -11,6 +11,8 @@ local light
 local lid
 ---@type EntityHandle
 local battery_trigger
+---@type EntityHandle
+local beam_pt
 
 
 local function ToggleState()
@@ -20,12 +22,14 @@ local function ToggleState()
         print("Flashlight turned off")
         DoEntFireByInstanceHandle(light, "TurnOff", "", 0, nil, nil)
         DoEntFireByInstanceHandle(thisEntity, "Skin", "0", 0, nil, nil)
+        DoEntFireByInstanceHandle(beam_pt, "StopPlayEndCap", "", 0, nil, nil)
         thisEntity:SaveBoolean("IsOn", false)
     else
         -- turn on
         print("Flashlight turned on")
         DoEntFireByInstanceHandle(light, "TurnOn", "", 0, nil, nil)
         DoEntFireByInstanceHandle(thisEntity, "Skin", "1", 0, nil, nil)
+        DoEntFireByInstanceHandle(beam_pt, "Start", "", 0, nil, nil)
         thisEntity:SaveBoolean("IsOn", true)
     end
 end
@@ -53,6 +57,7 @@ local function BatteryInserted(io)
         battery_trigger:Disable()
         thisEntity:SaveNumber("BatteriesInserted", 2)
         thisEntity:SaveBoolean("IsCharged", true)
+        CreateHint("hint_flashlight_button", 3, thisEntity)
     else
         print("\tFirst battery")
         -- add battery
@@ -73,14 +78,23 @@ local function BatteryInserted(io)
 end
 util.SanitizeFunctionForHammer(BatteryInserted)
 
+
+local function EndHint()
+    if not thisEntity:LoadBoolean("done_button_hint", false) then
+        HideLastHint()
+        thisEntity:SaveBoolean("done_button_hint", true)
+    end
+end
+
 ---Callback for grenade button press
 ---@param data INPUT_CALLBACK
 local function ButtonPress(data)
     if data.hand.ItemHeld == thisEntity then
+        thisEntity:EmitSound(SOUND_BUTTON)
         print("Player pressed flashlight button, checking if charged")
         if thisEntity:LoadBoolean("IsCharged", false) then
             print("\tFlashlight charged")
-            thisEntity:EmitSound(SOUND_BUTTON)
+            EndHint()
             ToggleState()
         end
     end
@@ -97,6 +111,8 @@ local function ready(saveLoaded)
             light = child
         elseif child:GetModelName() == "models/bivouac/flashlight_lid.vmdl" then
             lid = child
+        elseif child:GetClassname() == "info_particle_system" then
+            beam_pt = child
         end
     end
     Input:TrackButton(16)

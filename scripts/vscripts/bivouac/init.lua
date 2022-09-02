@@ -56,12 +56,13 @@ end
 LastHintDisplayed = nil
 
 ---Show a hint
----@param skin "hint_1"|"hint_2"|"hint_3"
----@param attach 0|1|2 # 0 = none, 1 = primary hand, 2 = secondary hand
-function CreateHint(skin, attach)
-    if not Convars:GetBool("gameinstructor_enable") or Convars:GetBool("sv_gameinstructor_disable") then
-        return
-    end
+---@param skin "hint_backpack_take"|"hint_backpack_item"|"hint_backpack_put"|"hint_flashlight_button"
+---@param attach 0|1|2|3 # 0 = none, 1 = primary hand, 2 = secondary hand, 3 = entity
+---@param entity EntityHandle? # If `attach` is 3 then it will attach to this entity.
+function CreateHint(skin, attach, entity)
+    -- if not Convars:GetBool("gameinstructor_enable") or Convars:GetBool("sv_gameinstructor_disable") then
+    --     return
+    -- end
     -- print("Spawning hint")
     local hint = SpawnEntityFromTableSynchronous("prop_dynamic", {
         model = "models/bivouac/hint_panel.vmdl",
@@ -69,7 +70,10 @@ function CreateHint(skin, attach)
         skin = skin,
         targetname = "hint_panel"
     })
-    hint.attach = attach
+    if attach == 1 then entity = Player.PrimaryHand
+    elseif attach == 2 then entity = Player.SecondaryHand
+    end
+    hint.attach_entity = entity
     LastHintDisplayed = hint
     hint:GetPrivateScriptScope():ShowHint()
 end
@@ -80,25 +84,41 @@ function HideLastHint()
         LastHintDisplayed = nil
     end
 end
+function EndBackpackHints()
+    print("Ending backpack hints")
+    -- local t = {} Player:GatherCriteria(t) for k,v in pairs(t) do print(k,v) end
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        print('enindg')
+        HideLastHint()
+        DoEntFire("relay_first_note_hint", "Disable", "", 0, nil, nil)
+        Player:SaveBoolean("done_backpackhints", true)
+    end
+end
 function ShowFirstHint()
-    -- print("Showing first hint")
-    CreateHint("hint_1", 2)
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        -- print("Showing first hint")
+        CreateHint("hint_backpack_take", 2)
+    end
 end
 function ShowSecondHint()
-    -- print("Showing second hint")
-    local hand = 1
-    if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
-        hand = 2
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        -- print("Showing second hint")
+        local hand = 1
+        if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
+            hand = 2
+        end
+        CreateHint("hint_backpack_item", hand)
     end
-    CreateHint("hint_2", hand)
 end
 function ShowThirdHint()
-    -- print("Showing third hint")
-    local hand = 2
-    if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
-        hand = 1
+    if not Player:LoadBoolean("done_backpackhints", false) then
+        -- print("Showing third hint")
+        local hand = 2
+        if Player.PrimaryHand.ItemHeld and Player.PrimaryHand.ItemHeld:GetName() == "@backpack" then
+            hand = 1
+        end
+        CreateHint("hint_backpack_put", hand)
     end
-    CreateHint("hint_3", hand)
 end
 
 local PortalScreenFog = -1
@@ -110,27 +130,47 @@ end
 function CreatePortalScreenFog()
     DoEntFire("PortalScreenFogParticle", "Stop", "", 0, nil, nil)
     PortalScreenFogScalar = Entities:FindByName(nil, "PortalScreenFogAlphaScalar")
-    -- local pt = Entities:FindByName(nil, "PortalScreenFogParticle")
     SetPortalScreenFogValue(0)
     DoEntFire("PortalScreenFogParticle", "Start", "", 0, nil, nil)
-
-    -- if PortalScreenFog then
-    --     ParticleManager:DestroyParticle(PortalScreenFog, true)
-    -- end
-    -- PortalScreenFog = ParticleManager:CreateParticleForPlayer("particles/bivouac/screen_portal.vpcf", 0, Player, Player)
 end
 function SetPortalScreenFogValue(value)
     if PortalScreenFogScalar then
         PortalScreenFogScalar:SetOrigin(Vector(value))
     end
-
-    -- if PortalScreenFog > -1 then
-    --     ParticleManager:SetParticleControl(PortalScreenFog, 0, Vector(1))
-    -- end
 end
 
 function SetWindValue(value)
     SetOpvarFloatAll('hlvr_global_opvars', 'opvars', 'wind_val_raw', value)
+end
+
+function ForestAmbientOneShot()
+    local target, max_dist = nil, 0
+    local player_origin = Player:GetOrigin()
+    local targets = Entities:FindAllByNameWithin("forest_ambient_oneshot_target", player_origin, 1500)
+    target = targets[RandomInt(1,#targets)]
+    -- for _, trgt in ipairs(targets) do
+    --     local dist = VectorDistance(trgt:GetOrigin(), player_origin)
+    --     if dist > max_dist then
+    --         target = trgt
+    --         max_dist = dist
+    --     end
+    -- end
+    local xy_max_dist = 256
+    local z_max_dist = 32
+    local rnd_pos = Vector(
+        RandomInt(-xy_max_dist,xy_max_dist),
+        RandomInt(-xy_max_dist,xy_max_dist),
+        RandomInt(-z_max_dist, z_max_dist)
+    )
+    StartSoundEventFromPosition("Bivouac.VariedForestAmbienceOneShot", target:GetOrigin() + rnd_pos)
+end
+
+function TestHint()
+    print('test hint doing')
+    FireGameEvent("vr_controller_hint_create", {
+		hint_name = "Lesson - Teach Grenade",
+		hint_dominant_hand = true,
+    })
 end
 
 -- ---Add a function to the global scope with alternate casing styles.
@@ -175,7 +215,7 @@ RegisterPlayerEventCallback("player_activate", function(data)
 
     Backpack = Entities:FindByName(nil, "@backpack")
     -- If first time startup, put note in backpack for hints
-    if not data.game_loaded and Backpack then
+    if not data.game_loaded and Backpack and GetMapName() == "bivouac" then
         -- print("Putting start note in backpack")
         local note = Entities:FindByName(nil, "note_1")
         Backpack:GetPrivateScriptScope().PutItemInBackpack(note, nil, true)

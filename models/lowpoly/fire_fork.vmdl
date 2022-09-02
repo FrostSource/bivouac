@@ -56,7 +56,7 @@
 							angles_left = [ 66.207298, 23.268492, 6.912496 ]
 							origin_right = [ -1.05611, -0.918087, 0.076043 ]
 							angles_right = [ 66.2073, -23.2685, -6.9125 ]
-							max_distance = 5.0
+							max_distance = 8.0
 							finger_thumb = 0.723
 							finger_pinky = 0.893
 							finger_ring = 0.754
@@ -103,6 +103,30 @@
 							exclude_by_default = false
 							exception_list = [  ]
 						}
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "backpack_angle"
+						parent_bone = ""
+						relative_origin = [ -90.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "backpack_offset"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.2, -0.6 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
 					},
 				]
 			},

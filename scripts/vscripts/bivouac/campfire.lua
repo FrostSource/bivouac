@@ -7,7 +7,11 @@ local fire_level = 1
 ---@type EntityHandle
 local fire_scalar = 2
 
-local fire_putout_multiplier = 0.6
+---The lower this is the more water is required to put out fire.
+local fire_putout_multiplier = 0.5
+---Because fire particles can get very small it becomes
+---unrealistic to force the player to get the level to 0
+local fire_min_level = 0.15
 
 local last_steam_sound = 0
 local steam_sound_time = 0.3
@@ -27,7 +31,7 @@ local function BucketOverFireThink()
             end
             fire_scalar:SetOrigin(Vector(fire_level))
             thisEntity:SaveNumber("FireLevel", fire_level)
-            if fire_level <= 0 then
+            if fire_level <= fire_min_level then
                 fire_level = 0
                 DoEntFireByInstanceHandle(fire_pt, "Stop", "", 0, thisEntity, thisEntity)
                 DoEntFireByInstanceHandle(

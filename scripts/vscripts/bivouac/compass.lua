@@ -45,25 +45,3 @@ local function Think()
     return 0
 end
 thisEntity:SetThink(Think, "Think", 0.1)
-
-local function DebugCompassBaseAngle()
-    local base = Entities:FindByName(nil, "compass_base")
-    local angle = RandomInt(0,359)
-    base:SetForwardVector(Vector(RandomFloat(-1,1),RandomFloat(-1,1),RandomFloat(-1,1)))
-    -- base:SetAngles(0,angle,0)
-end
-Convars:RegisterCommand("debug_compass_base_angle", DebugCompassBaseAngle, "", 0)
-
-local function DebugCompassBaseAngle10()
-    local base = Entities:FindByName(nil, "compass_base")
-    local a = base:GetAngles().y + 10
-    if a >= 360 then a = a - 360 end
-    base:SetAngles(0,a,0)
-end
-Convars:RegisterCommand("debug_compass_base_angle_10", DebugCompassBaseAngle10, "", 0)
-SendToServerConsole("bind h debug_compass_base_angle_10")
-
-
-
---debug
--- EnableMagneticDisruption()

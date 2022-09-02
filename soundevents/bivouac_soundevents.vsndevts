@@ -3,7 +3,7 @@
     "Inventory.BackpackGrab" =
     {
         type = "hlvr_default_3d"
-        volume = 2
+        volume = 3.2
         volume_falloff_min = 128
         volume_falloff_max = 512
         vsnd_files =
@@ -119,9 +119,9 @@
     "Bivouac.RopeTie" =
     {
         type = "hlvr_default_3d"
-        volume = 1.5
-        volume_falloff_min = 90
-        volume_falloff_max = 250
+        volume = 2.0
+        volume_falloff_min = 150
+        volume_falloff_max = 400
         vsnd_files =
         [
             "sounds/bivouac/rope_tie.vsnd",
@@ -262,7 +262,7 @@
     "Bivouac.MonsterIdle" =
     {
         type = "hlvr_default_3d"
-		volume = 2.000000
+		volume = 3.000000
 		volume_fade_out = 1.000000
 		volume_falloff_min = 400.000000
 		volume_falloff_max = 1024.000000
@@ -312,6 +312,60 @@
 		]
     }
 
+    "Bivouac.FireBurnLp" =
+    {
+        type = "hlvr_default_3d"
+        volume = 1.0
+        volume_fade_in = 0.02
+        volume_fade_out = 0.02
+        volume_falloff_min = 200
+        volume_falloff_max = 1000
+        vsnd_files = "sounds/player/general/flesh_burn.vsnd"
+    }
 
+    "Bivouac.BushRustle" =
+    {
+        type = "hlvr_default_3d"
+        volume = 1.0
+        volume_falloff_min = 128
+        volume_falloff_max = 1500
+        vsnd_files =
+        [
+            "sounds/copyright/nature/animals_bird_turkey_baby_bush_run_away_scared_dried_leaves.vsnd",
+        ]
+    }
+
+
+    "Bivouac.VariedForestAmbienceOneShot" =
+    {
+        type = "hlvr_default_3d"
+        //volume = 1.0
+        volume_rand_min = 0.5
+        volume_rand_max = 1.8
+        volume_falloff_min = 64
+        volume_falloff_max = 2048
+        vsnd_files =
+        [
+            "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_01.vsnd",
+            "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_02.vsnd",
+            "sounds/copyright/nature/foliage_branch_healthy_twist_stress_creak_05.vsnd",
+
+            "sounds/copyright/nature/foliage_dry_crush_squeeze_crunchy_crispy_thick_02.vsnd",
+            "sounds/copyright/nature/foliage_dry_crush_squeeze_crunchy_crispy_thick_04.vsnd",
+
+            "sounds/copyright/nature/footstep_twig_snap_forest_floor_001.vsnd",
+            "sounds/copyright/nature/footstep_twig_snap_forest_floor_002.vsnd",
+            
+            "sounds/copyright/nature/leaves_rip_tear_001.vsnd",
+            "sounds/copyright/nature/leaves_rip_tear_002.vsnd",
+            "sounds/copyright/nature/leaves_rip_tear_003.vsnd",
+            
+            "sounds/copyright/nature/tree_branch_thick_healthy_leaves_movement_rustle_short_01.vsnd",
+            "sounds/copyright/nature/tree_branch_thick_healthy_leaves_movement_rustle_short_02.vsnd",
+            "sounds/copyright/nature/tree_branch_thick_healthy_leaves_movement_rustle_short_03.vsnd",
+            
+            "sounds/copyright/nature/animals_bird_turkey_baby_bush_run_away_scared_dried_leaves.vsnd",
+        ]
+    }
     
 }

@@ -28,12 +28,20 @@ end
 
 local function FirstPickup(io)
     if thisEntity:LoadBoolean("FirstPickup", true) then
-        local stones_found = Player:LoadNumber("StonesFound", 0) + 1
-        Player:SaveNumber("StonesFound", stones_found)
-        wind_max = stones_found / 6
         thisEntity:SaveBoolean("FirstPickup", false)
-        thisEntity:SetThink(PickupThink, "PickupThink", 1)
-        DoEntFire("@pp_blackandwhite_stone", "Enable", "", 0, nil, nil)
+        local stones_found = Player:LoadNumber("StonesFound", 0) + 1
+        local outside_stones_found = Player:LoadNumber("OutsideStonesFound", 0) + 1
+        Player:SaveNumber("StonesFound", stones_found)
+        Player:SaveNumber("OutsideStonesFound", outside_stones_found)
+        -- Hard coded do not animate black&white or wind for cave stones
+        if thisEntity:GetName() ~= "symbol_stone_4"
+        and thisEntity:GetName() ~= "symbol_stone_3"
+        and thisEntity:GetName() ~= "symbol_stone_5"
+        then
+            wind_max = outside_stones_found / 3
+            thisEntity:SetThink(PickupThink, "PickupThink", 1)
+            DoEntFire("@pp_blackandwhite_stone", "Enable", "", 0, nil, nil)
+        end
     end
 end
 util.SanitizeFunctionForHammer(FirstPickup)
