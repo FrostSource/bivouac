@@ -22,7 +22,7 @@ local function ToggleState()
         print("Flashlight turned off")
         DoEntFireByInstanceHandle(light, "TurnOff", "", 0, nil, nil)
         DoEntFireByInstanceHandle(thisEntity, "Skin", "0", 0, nil, nil)
-        DoEntFireByInstanceHandle(beam_pt, "Stop", "", 0, nil, nil)
+        DoEntFireByInstanceHandle(beam_pt, "StopPlayEndCap", "", 0, nil, nil)
         thisEntity:SaveBoolean("IsOn", false)
     else
         -- turn on

@@ -1,0 +1,265 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{10b35a8e-b1ee-4f14-87a6-a7b6aae37699} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_ConstantColor = 
+	[
+		183,
+		0,
+		0,
+		255,
+	]
+	m_flConstantLifespan = 0.500000
+	m_nMaxParticles = 3
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.500000
+		},
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = 1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.900000
+			m_flEndScale = 40.000000
+		},
+		{
+			_class = "C_OP_RemapCPtoScalar"
+			m_nCPInput = 1
+			m_nFieldOutput = "16"
+		},
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+		{
+			_class = "C_OP_NormalLock"
+		},
+		{
+			_class = "C_OP_RemapDotProductToScalar"
+			m_nInputCP2 = 11
+			m_nFieldOutput = "18"
+			m_flInputMin = -1.000000
+			m_flOutputMin = -1.000000
+		},
+		{
+			_class = "C_OP_SetFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_PARTICLE_FLOAT"
+				m_nMapType = "PF_MAP_TYPE_CURVE"
+				m_nScalarAttribute = 18
+				m_Curve = 
+				{
+					m_spline = 
+					[
+						{
+							x = -1.000000
+							y = -1.219703
+							m_flSlopeIncoming = -9.668117
+							m_flSlopeOutgoing = -9.668117
+						},
+						{
+							x = -0.217163
+							y = -0.521413
+							m_flSlopeIncoming = 3.746395
+							m_flSlopeOutgoing = 3.746395
+						},
+						{
+							x = 1.000000
+							y = 1.340693
+							m_flSlopeIncoming = -2.406892
+							m_flSlopeOutgoing = -2.406892
+						},
+					]
+					m_tangents = 
+					[
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_FREE"
+							m_nOutgoingTangent = "CURVE_TANGENT_MIRROR"
+						},
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_FREE"
+							m_nOutgoingTangent = "CURVE_TANGENT_MIRROR"
+						},
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_FREE"
+							m_nOutgoingTangent = "CURVE_TANGENT_MIRROR"
+						},
+					]
+					m_vDomainMins = 
+					[
+						-1.000000,
+						-3.140000,
+					]
+					m_vDomainMaxs = 
+					[
+						1.000000,
+						3.140000,
+					]
+				}
+			}
+			m_nOutputField = "4"
+		},
+		{
+			_class = "C_OP_DistanceBetweenCPs"
+			m_nFieldOutput = "16"
+			m_nEndCP = 11
+			m_flInputMin = 50.000000
+			m_flInputMax = 100.000000
+			m_flOutputMin = 1.000000
+			m_flOutputMax = 0.000000
+			m_bScaleInitialRange = true
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_flMaxSize = 1000.000000
+			m_flSelfIllumAmount = 1.000000
+			m_bAdditive = true
+			m_bDisableZBuffering = true
+			m_hTexture = resource:"materials/particle/lens_flare/pro_flares.vtex"
+			VisibilityInputs = 
+			{
+				m_flInputMin = 1.000000
+				m_flRadiusScaleMin = 0.000000
+				m_flRadiusScaleMax = 6.000000
+				m_flDotInputMin = -0.975000
+				m_flDotInputMax = -1.000000
+				m_nCPin = 0
+				m_bRightEye = true
+				m_flDistanceInputMin = 100.000000
+				m_flDistanceInputMax = 50.000000
+			}
+			m_flFeatheringMaxDist = 1.000000
+			m_nFeatheringMode = "PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL"
+		},
+		{
+			_class = "C_OP_RenderSprites"
+			m_flSelfIllumAmount = 1.000000
+			m_bAdditive = true
+			m_bDisableZBuffering = true
+			m_flFeatheringMaxDist = 1.000000
+			m_hTexture = resource:"materials/particle/lens_flare/pro_flares.vtex"
+			VisibilityInputs = 
+			{
+				m_flInputMin = 1.000000
+				m_flRadiusScaleMin = 0.000000
+				m_flRadiusScaleMax = 10.000000
+				m_flDotInputMin = -0.975000
+				m_flDotInputMax = -1.000000
+				m_nCPin = 0
+				m_bRightEye = true
+				m_flCameraBias = 4.000000
+				m_flDistanceInputMin = 50.000000
+				m_flDistanceInputMax = 100.000000
+			}
+			m_nFeatheringMode = "PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL"
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = 
+			[
+				118,
+				118,
+				118,
+				255,
+			]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 2
+			m_bShuffle = true
+			m_nSequenceMin = 1
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 150
+			m_nAlphaMax = 150
+		},
+		{
+			_class = "C_INIT_RingWave"
+			m_nControlPointNumber = 10
+			m_flParticlesPerOrbit = 3.000000
+			m_flInitialRadius = 30.000000
+			m_flYaw = 90.000000
+			m_bEvenDistribution = true
+		},
+		{
+			_class = "C_INIT_PositionWarp"
+			m_vecWarpMin = 
+			[
+				2.000000,
+				0.800000,
+				1.000000,
+			]
+			m_vecWarpMax = 
+			[
+				2.000000,
+				0.800000,
+				1.000000,
+			]
+			m_nControlPointNumber = 10
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = 
+			[
+				-100.000000,
+				0.000000,
+				0.000000,
+			]
+			m_OffsetMax = 
+			[
+				-100.000000,
+				0.000000,
+				0.000000,
+			]
+			m_nControlPointNumber = 10
+			m_bLocalCoords = true
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 3
+			m_flStartTime = 0.100000
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						null,
+						null,
+						null,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_nBehaviorVersion = 6
+	m_nFirstMultipleOverride_BackwardCompat = 2
+	m_flConstantRadius = 0.450000
+	m_bScreenSpaceEffect = true
+}
